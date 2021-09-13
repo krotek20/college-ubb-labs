@@ -1,0 +1,40 @@
+.dialog {
+    list-style: none;
+    padding: 60px 0 0 100px;
+}
+
+li {
+    border: solid 1px;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 50px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+li::before {
+    width: 70px;
+    height: 55px;
+    position: absolute;
+    content: "";
+    right: 300px;
+    top: 10px;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    right: 270px;
+    top: 20px;
+    border-top: solid 15px white;
+    border-right: solid 15px;
+}
+
+li.alice::before {
+    background: url('sprite.png') -25px -50px;
+}
+
+li.bob::before {
+    background: url('sprite.png') -25px -164px;
+}

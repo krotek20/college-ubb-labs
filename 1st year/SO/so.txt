@@ -1,0 +1,307 @@
+Sisteme de operare
+
+Tipuri:
+	dupa partajabilitatea resurselor
+		monouser si monotasking
+			un singur user si un singur task => task-urile sunt secventiale
+			folosit la vechile telefoane mobile
+		monouser si multitasking
+			permite rularea a mai multor task-uri la un moment dat
+			windows, android 
+		multiuser
+			la unix, servere
+
+	dupa tipurile de interactiuni permise
+		seriale
+			executa un program ce nu poate fi oprit
+			supercalculatoare
+		cu timp partajat
+			un utilizator poate interveni in executia programului
+			partajarea procesorului, memoriei si timpului
+			multiuser
+		calculatoare personale si statii de lucru
+			se partajeaza resurse intre procese
+			windows, ubuntu
+		sisteme autonome
+			sunt dedicate unui singur proces
+			ex: soft de roboti
+			sa faca o actiune in timp prestabilit
+		sisteme portabile
+			sunt destinate comunicatiilor (bluetooth, infrared, unde radio)
+			ex: pda, android, ios
+			necesita metode de securitate specifica (antifurt)
+		sisteme conectate in retea
+			permit conectarea la internet
+			calculatoarele conectate intr-o retea (de calculatoare, internet, adica toate) 
+
+	dupa organizarea interna a programelor ce compun sistemul de operare
+		sisteme monolitice
+		sisteme cu nucleu de interafata hardware
+		sisteme cu structura stratificate
+		sisteme organizate ca masini virtuale
+
+Starile unui program
+
+SPOOL = Simultaneous Peripheral Operations OnLine
+HOLD:
+	se citesc date despre proces
+	se aloca memorie
+READY:
+	a terminat starea de HOLD
+	asteapta sa primeasca procesor
+RUN:
+	primeste procesor si face chestii (o cuanta de timp = 10 - 100 ms)
+FINISH:
+	se dealoca memorie
+	printarea datelor de iesire
+WAIT:
+	astepta operatii de IO
+SWAP:
+	procesul este evacuat pe disc	
+
+		  +-------SWAP
+		  v	   	   |
+HOLD => READY <=> RUN => FINISH
+		  ^		   |
+		  L-------WAIT
+
+Fazele unui program:
+	editarea intr-un text editor
+	compilare (.c => .obj)
+	linkeditare (.obj + .obj + ... => .exe)
+	executie (ruleaza programul)
+	debug (intreruperi prin semnale)
+	salt la 1
+
+Lansarea unui program in executie:
+	APASASTART: // se citeste o secventa de cod in hexa de loaderabsolut
+	 for (i = 0; i < 100 ; i++) {
+	 read(M[i]);
+	 }
+	 transferla(M[0]);
+
+	LOADERABSOLUT: // se citeste sistemul de operare
+	 do {
+	 for ( i=0; i < S; i++) {
+	 read(M[r+i]);
+	 }
+	 A = M[r];
+	 n = M[r+1];
+	 if (n== -1)
+	 break;
+	 for ( i=0; i< n; i++) {
+	 M[A+i] = M[r+2+i]
+	 }
+	while (FALSE);
+
+	LANSARE: // se porneste sistemul de operare
+	 transferla(A);
+
+Procese
+
+proces = un program ce ruleaza la un moment (pe RAM)
+program = pe hard
+
+Existenta unui proces este conditionata de:
+	procedura = ce executa
+	procesor = cine executa
+	mediu = memorie, periferice
+
+pe un sistem multitasking, se executa procesele in paralel => concurenta => necesitatea sincronizarii
+
+sectiune critica = sectiune ce nu poate fi acceasata simulatan de mai multe procese
+resursa critica = resursa ce nu poate fi acceasata simulatan de mai multe procese
+
+maxim un singur proces este in sectiune critica
+
+solutia lui Peterson de a proteja sectiunea critica: Spinlock
+
+Spinlock:
+	while (Used)
+		continue;
+	Used = true
+	...
+	Used = false
+
+Semafor: Pereche (v(s) = valoarea, c(s) = coada de asteptare)
+
+Problema producatorului si a consumatorului
+	+exista producatori si consumatori (producatorii pun valori intr-un buffer, consumatorii le iau)
+	-trebuie sa existe acces exclusiv la un buffer
+	-producatorii asteapta cand bufferul este plin
+	-consumatorii asteapta cand bufferul este gol
+
+	sExclusiv (1, c1(s)) = mutex
+	plin (capacitate_maxima, c2(s))
+	gol (0 = capacitate_minima, c3(s))
+
+	def prod:
+		plin.wait()
+		sExclusiv.wait()
+		buffer.push(ceva)
+		sExclusiv.post()
+		gol.post()
+
+	def cons:
+		gol.wait()
+		sExclusiv.wait()
+		buffer.pop()
+		sExclusiv.post()
+		plin.post()
+
+	mutex vs semafor: mutexul este un obiect de protejare a resurselor, semaforul este de semnalizare 
+
+Impas = Deadlock
+	detectare: graf cu procese si ce resurse; daca graful este ciclic atunci avem deadlock (incetineste mult)
+	evitare: blocam resursele aceeasi ordine, metoda bancherului (incetineste mult)
+	oprire deadlock: se omoara unul din procese (apare subiectivitate in alegerea procesului), se reporneste sistemul (pierderi de informatii), revenire la un checkpoint anterior (incetineste tot, consuma memorie, nu garanteaza evitarea deadlock-ului, se poate obtine livelock)
+
+Multiprogramare: un singur core cu multe procese
+
+Algoritmi de planificare:
+	FCFS (First come first served)
+	SJF (Shortest job first)
+	Algoritm bazat pe prioritati
+	Algoritm bazat pe termene de terminare (deadline scheduling)
+	Round-Robin (planificare circulara)
+		ruleaza in paralel pe cuante de timp
+		se poate combina cu prioritati
+
+Gestiunea memoriei:
+
+Segmentare: un program este impartit in segmente
+	segmente de cod, date, stiva
+	programul poate cere incarcarea unui segment
+
+Memorie externa:
+	de arhivare
+		ce e in hdd/ssd
+		fisiere, baze de date
+	secundara
+		swap
+		contine mecanisme de memorie virtuala
+Memorie interna:
+	operativa
+		RAM
+		contine programe pentru procese existente in sistem
+	cache
+		mica si rapida
+
+procesorul comunica cu cache-ul
+procesor <=> cache <=> operativa <=> secundara <=> arhivare
+
+Memoria cache contine informatii recent utilizate; aduce in memorie folosind metoda vecinatatii 
+
+OP 		->		AM 		-> 		AR 		-> 		AF
+		 compilare			linkeditare			 executare
+
+OP = obiecte din programul sursa
+AM = adresa relativa la modulul compilat
+AR = adresa relocabila
+AF = adresa fizica din memoria operativa
+
+Tehnici de alocare:
+	alocare reala
+	-spatiu contiguu
+		la SO monotasking
+			acel task ocupa tot spatiul
+			se poate folosi suprapunere (overlay) pentru programe mari
+		la SO multitasking
+			cu partitii fixe (statica)
+					se imparte memoria in partitii si o partitie este alocata unui proces pe toata durata lui
+				absoluta
+					linkeditorul pregateste programul sa ruleze intr-o zona de memorie prestabilita si numai acolo
+				relocabila
+					calcul de adrese (baza + deplasament)
+			cu partitii variabile (dinamica)
+				se ajunge la fragmentare
+				pentru evitare, se pot alipi spatii libere vecine
+				SO-ul decine cand se face relocare (compactare a memoriei)
+	alocare virtuala
+		-spatiu necontiguu
+		paginata
+		segmentata
+		segmentata si paginata
+
+Alocare paginata:
+	fiecare proces e impartit in pagini si are o tabela de pagini
+	paginile sunt distribuite necontiguu
+	toate paginile au aceeasi dimensiune
+
+Alocare segmentata: 
+	fiecare proces este impartit in segmente si are o tabela de segmente
+	segmentele au dimensiuni diferite
+	pot fi folosite in comun de mai multe procese
+
+Alocare segmentata si paginata
+	alocarea spatiului pentru fiecare segment se face paginat
+	proces => pagini => segmente
+
+Metode de plasare:
+	Metoda primei potriviri (First Fit)
+	Metoda celei mai bune potriviri (Best Fit)
+	Metoda celei mai rele potriviri (Worst Fit)
+	Metoda alocarii prin camarazi (Buddy-System)
+		două spaţii libere de ordinul k se numesc camarazi (Buddy) de ordin k, dacă
+		adresele lor A1 şi A2 verifică:
+			A1 < A2 , A2 = A1 + 2^k şi A1 mod 2^(k+1) = 0
+			sau
+			A2 < A1 , A1 = A2 + 2^k şi A2 mod 2^(k+1) = 0
+
+Metode de inlocuire (ortodoxa):
+	NRU (Not Recently Used) (0 pentru modificare, 1 pentru referire; referire < modificare)
+		0. clasa 0: pagini nereferite şi nemodificate;
+		1. clasa 1: pagini nereferite (în intervalul fixat), dar modificate de la încărcarea lor;
+		2. clasa 2: pagini referite dar nemodificate;
+		3. clasa 3: pagini referite şi modificate
+	FIFO (First In First Out)
+		se poate combina cu NRU
+	LRU (Least Recently Used)
+		Pentru n pagini:
+
+		0	b00	b01 ... b0(n-1)
+		1	...
+		2	...
+		3	...
+		...
+		n-1	...			b(n-1)(n-1)
+
+		initial este plina de 0 tabela
+		cand este accesata pagina k, se puna 1 pe toata linia k, si 0 pe coloana k
+		se elimina pagina cu cele mai multe 0-uri pe linie
+
+Memoria cache este impartita in sloturi de lungime egala
+	un slot are dimensiunea unui bloc de memorie, ce este o putere a lui 2
+
+Proiectarea spatiului:
+	proiectare directa: 
+		S = A % C; S = numarul slotului, A = adresa oarecare, C = numarul de sloturi
+	proiectare asociativa:
+		plaseaza un bloc de memorie intr-un slot oarecare
+	proiectare set asociativa
+		memoria este impartita in I seturi, un set fiind compus din J sloturi
+			C = I * J
+			K = A % I => K - numarul setului si il pune intr-un slot oarecare
+
+Sistemul de fisiere UNIX
+
+Legaturi hard si simbolice
+
+Legatura hard:
+	inod spre fisierul acela
+Legatura simbolica:	
+	inod spre un fisier in structura de director (se comporta ca un director)
+Fiecare fisier are un contor de legare, care este incrementat cu 1 la fiecare noua legatura creata. La o stergere, se decontorizeaza cu 1, si abia cand ajunge la 0 este sters efectiv (sters de pe disc si blocurile ocupate vor fi eliberate)
+Inoduri
+	contin pointeri catre blocuri de fisiere
+	accesare directa, indirectare simpla, dubla, tripla
+
+Fisiere proces => tabela de fisiere deschise in sistem => tabela de inoduri => fisier
+
+0 = stdin
+1 = stdout
+2 = stderr
+
+dup si dup2
+dup(descrVechi) = copiaza intrarea lui descrVechi in tabel si returneaza noua intrare
+dup2(descrVechi, descrNou) = face o copie a lui descrVechi in descrNou si se inchide vechea intrare a lui descrNou

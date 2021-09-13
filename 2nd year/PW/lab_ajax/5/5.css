@@ -1,0 +1,31 @@
+#container {
+    width: 400px;
+}
+
+#file {
+    border: 2px solid red;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: orangered;
+    margin: 20 auto;
+    box-sizing: border-box;
+
+}
+
+li {
+    box-sizing: border-box;
+    /*height: 30px;*/
+    font-size: 20px;
+    color: white;
+    transition-duration: 0.5s;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: white;
+    color: orangered;
+    cursor: pointer;
+}

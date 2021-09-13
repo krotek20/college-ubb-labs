@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.radu.salesman.controllers.ManageProductsController">
+    <children>
+        <GridPane prefHeight="400.0" prefWidth="512.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowSpan="3">
+                    <children>
+                        <HBox prefHeight="67.0" prefWidth="178.0"/>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="260.0" text="PRODUCTS LIST">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                        <TableView fx:id="productsTable" prefHeight="314.0" prefWidth="256.0">
+                            <columns>
+                                <TableColumn fx:id="nameColumn" prefWidth="139.39999693632126" text="Product"/>
+                                <TableColumn fx:id="priceColumn" prefWidth="52.600006103515625" text="Price"/>
+                                <TableColumn fx:id="quantityColumn" prefWidth="63.79997253417969" text="In Stock"/>
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                      GridPane.rowSpan="2">
+                    <children>
+                        <VBox prefHeight="278.0" prefWidth="178.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="52.0" prefWidth="178.0">
+                                    <children>
+                                        <Button contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false"
+                                                prefHeight="25.0" prefWidth="46.0" text="ADD" textAlignment="CENTER"
+                                                onAction="#handleAddButton">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Arial Bold" size="12.0"/>
+                                            </font>
+                                        </Button>
+                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0"
+                                                text="MODIFY" onAction="#handleModifyButton">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Arial Bold" size="12.0"/>
+                                            </font>
+                                        </Button>
+                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="REMOVE"
+                                                textAlignment="CENTER" onAction="#handleDeleteButton">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Arial Bold" size="12.0"/>
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </HBox>
+                                <TextField fx:id="idTextField" alignment="CENTER" promptText="ID" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="nameTextField" alignment="CENTER" promptText="NAME">
+                                    <VBox.margin>
+                                        <Insets top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="quantityTextField" alignment="CENTER" promptText="QUANTITY">
+                                    <VBox.margin>
+                                        <Insets top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="priceTextField" alignment="CENTER" promptText="PRICE PER UNIT">
+                                    <VBox.margin>
+                                        <Insets top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleExit" text="X">
+                            <VBox.margin>
+                                <Insets right="10.0" top="10.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font name="Arial Bold" size="18.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.container {
+    display: inline-block;
+    border: solid;
+    width: 420px;
+    padding: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.list {
+    float: left;
+    margin: 10px;
+    background: cyan;
+    padding: 20px 20px 0 20px;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}

@@ -1,0 +1,69 @@
+MPP materie:
+
+
+Curs1:
+
+Instrumente pentru construire automata:
+- Utilitare pentru construire automata: genereaza artifactele corespunzatoare construirii in timpul compilarii si/sau link-editarii codului. (gradle, maven, etc)
+- Servere pentru construire automata: sisteme soft care executa utilitarele de construire automata la perioade de timp predefinite sau in momentul aparitiei unor evenimente (TeamCity, Jenkins, CruiseControl)
+
+
+Gradle este un utilitar ce permite gestiunea avansata a construirii aplicatiilor. Foloseste doua concepte de baza: proiect si sarcini (tasks)
+
+Un proiect este:
+- ceva ce se doreste a se construi (fisier jar)
+- ceva ce se doreste a se face (instalarea unei aplicatii pentru folosirea de catre utilizatori)
+- are asociate asociate unul sau mai multe task-uri (sarcini)
+
+O sarcina este:
+- o unitate de lucru care este efectuata pentru construirea automata (compilare de proiect, rulare teste, etc)
+
+build.gradle: Specifica un proiect si sarcinile sale
+gradle.properties: Configurarea proprietatilor construirii
+settings.gradle: Descrie proiectele continute
+
+Toate facilitatile utile unui proiect sunt furnizate de pluginuri (sarcini noi, dependente noi, configuratie implicita la sarcinile adaugate, proprietati noi)
+
+
+build: directorul ce conține toate artefactele construite folosind Gradle. 
+
+
+Curs2:
+
+Intrument de jurnalizare: permite programatorilor sa inregistreze diferite tipuri de mesaje din codul sursa pentru: depanare, analiza ulterioara, etc.
+Nivele pentru mesaje: trace, debug, warning, error, info, fatal, off
+Log4j2 componente:
+- loggers
+- appenders (stocare)
+- layouts (formatare)
+
+Java Database Connectivity (JDBC) API ce contine o multime de clase ce asigura accesul la date.
+DriverManager colaboreaza cu interfata Driver pentru gestiunea driverelor disponibile unui client JDBC.
+Cand clientul cere o conexiune si furnizeaza un URL, clasa DriverManager este responsabila cu gasirea driverului care recunoaste URL-ul si cu folosirea lui pentru a se conecta la sursa de date.
+
+Clasa Connection: reprezinta o sesiune cu o baza de date specifica.
+Clasa Statement: se foloseste pentru executarea unei instructiuni SQL si pentru transmiterea rezultatului.
+Clasa ResultSet: contine o tabela ce reprezinta rezultatul unei instructiuni SELECT. Un obiect de tipul acestei clase contine un cursor care indica linia curenta din tabela, plasat initial inaintea primei linii din tabela.
+Clasa PreparedStatement: la creare, contine instructiunea SQL care mai apoi va fi transmisa SGBD-ului, unde este compilata (intructiunea nu este verificata la executie).
+
+Clasa Properties: se foloseste pentru a pastra perechi cheie-valoare (de tip String, cheia este unica).
+
+
+Curs3:
+
+ADO.NET este o biblioteca orietata pe obiecte care permite unei aplicatii sa interactioneze cu diferite surse de date: bd relationale, text, excel, xml
+
+Adnotarile adauga informatii unei parti de cod, dar nu fac parte din program. Nu au efect direct asupra codului. Utilizari:
+- furnizare de informatii suplimentare compilatorului
+- procesare automata din timpul compilarii sau deploymentului.
+- procesare in timpul executiei.
+
+Un bean Spring este orice clasă Java.
+Spring promovează cuplarea slaba prin “injectarea” asocierilor și folosirea interfețelor. Foloseste principiul IoC pentru "injectarea" asocierilor/dependentelor.
+
+
+Curs4:
+
+Principiul Inversion of Control (IoC) este cunoscut și ca dependency injection (DI).
+DI este procesul prin care obiectele își definesc asocierile (dependențele) fie prin parametrii constructorilor, fie prin argumentele unei metode de tip factory sau prin proprietăți de tip set, care trebuie apelate imediat după crearea obiectului. 
+Un container “injectează” aceste dependențe când creează obiectul. Acest proces este invers celui tradițional, în care obiectul este responsabil de instanțierea sau localizarea dependențelor sale.Un bean Spring este un obiect Java obișnuit care este instanțiat, asamblat și gestionat de containerul Spring IoC. 

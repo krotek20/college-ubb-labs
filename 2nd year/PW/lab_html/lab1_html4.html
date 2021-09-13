@@ -1,0 +1,444 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ro">
+<head>
+    <title>Erou RPG</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body bgcolor="#afc4b3">
+<div align="center" title="inceput">
+    <h1>Bun venit!</h1>
+    <h2>Lupta începe acum!</h2>
+    <h3>Creează-ți</h3>
+    <h4>caracterul tău RPG</h4>
+    <h5>și intră în bătălia</h5>
+    <h6>pentru putere!</h6>
+    <ol start="1" type="I">
+        <li>
+            <strong>
+                Introduceți datele dumneavoastră de utilizator
+            </strong>
+        </li>
+        <li>
+            <strong>
+                Adăugați și validați informații despre eroul nou creat
+            </strong>
+        </li>
+        <li>
+            <strong>
+                Apăsați pe butonul SUBMIT pentru a genera eroul
+            </strong>
+        </li>
+        <li>
+            <strong>
+                HAVE FUN!
+            </strong>
+        </li>
+    </ol>
+    <br>
+</div>
+<form action="#">
+    <fieldset>
+        <legend>
+            <b>Date utilizator</b>
+        </legend>
+        <table align="left">
+            <tr>
+                <td>
+                    <label for="nume">
+                        <i>Nume</i>
+                    </label>
+                    <div>
+                        <input id="nume" type="text">
+                    </div>
+                </td>
+                <td>
+                    <label for="email">
+                        <i>Email</i>
+                    </label>
+                    <div>
+                        <input id="email" type="text">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>După finalizare va fi generat un PDF cu informațiile introduse care va fi trimis pe Email-ul
+                        selectat
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <b>Informații erou</b>
+        </legend>
+        <table align="left">
+            <tr>
+                <th></th>
+                <th></th>
+                <th valign="middle">
+                    <i>''Eu decid ce înseamnă cel mai bun, în fiecare zi.''</i>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nume_erou">
+                        <i>Nume</i>
+                    </label>
+                    <div>
+                        <input id="nume_erou" type="text">
+                    </div>
+                </td>
+                <td>
+                    <label for="nivel">
+                        <i>Nivel (max. 100)</i>
+                    </label>
+                    <div>
+                        <input id="nivel" type="text">
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inaltime">
+                        <i>Înălțime</i>
+                    </label>
+                    <div>
+                        <input id="inaltime" type="text">
+                    </div>
+                </td>
+                <td>
+                    <label for="greutate">
+                        <i>Greutate</i>
+                    </label>
+                    <div>
+                        <input id="greutate" type="text">
+                    </div>
+                </td>
+                <td rowspan="6" colspan="0" valign="middle">
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <td>
+                                    <img src="hero.png" alt="Avatar erou" width="230" height="370">
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <i>Sex</i>
+                </td>
+                <td>
+                    <div>
+                        <label>
+                            <input name="sex" type="radio">Masculin
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="sex" type="radio">Feminin
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="sex" type="radio">Altul
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="clasa">
+                        <i>Clasă</i>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Character_class_(Dungeons_%26_Dragons)">
+                            (wikipedia)
+                        </a>
+                    </label>
+                </td>
+                <td>
+                    <div>
+                        <select id="clasa">
+                            <option>Barbarian</option>
+                            <option>Bard</option>
+                            <option>Cleric</option>
+                            <option>Druid</option>
+                            <option>Fighter</option>
+                            <option>Monk</option>
+                            <option>Paladin</option>
+                            <option>Ranger</option>
+                            <option>Rogue</option>
+                            <option>Sorcerer</option>
+                            <option>Warlock</option>
+                            <option selected>Wizard</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="regiune">
+                        <i>Regiuni vizitate</i>
+                    </label>
+                </td>
+                <td>
+                    <div>
+                        <select id="regiune" multiple>
+                            <option>Bilgewater</option>
+                            <option>Demacia</option>
+                            <option selected>Freljord</option>
+                            <option>Insulele Umbrelor</option>
+                            <option>Ionia</option>
+                            <option>Ixtal</option>
+                            <option>Noxus</option>
+                            <option>Orașul Bandle</option>
+                            <option>Piltover</option>
+                            <option>Shurima</option>
+                            <option>Targon</option>
+                            <option>Vid</option>
+                            <option>Zaun</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="avatar">
+                        <i>Avatar</i>
+                    </label>
+                </td>
+                <td>
+                    <div>
+                        <input id="avatar" type="file" accept="image/*">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="desc">
+                        <i>Descriere</i>
+                    </label>
+                </td>
+                <td>
+                    <textarea id="desc" cols="64" rows="8"></textarea>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <b>Măiestrii</b>
+        </legend>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            <label for="agilitate">
+                                <i>Agilitate</i>
+                            </label>
+                            <span>
+                                <input id="agilitate" type="text" value="10" maxlength="3" size="3" readonly>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="dexteritate">
+                                <i>Dexteritate</i>
+                            </label>
+                            <span>
+                                <input id="dexteritate" type="text" value="10" maxlength="3" size="3">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="creativitate">
+                                <i>Creativitate</i>
+                            </label>
+                            <span>
+                                <input id="creativitate" type="text" value="10" maxlength="3" size="3">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="logica">
+                                <i>Logică</i>
+                            </label>
+                            <span>
+                                <input id="logica" type="text" value="10" maxlength="3" size="3">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="intelegere">
+                                <i>Înțelegere</i>
+                            </label>
+                            <span>
+                                <input id="intelegere" type="text" value="10" maxlength="3" size="3">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="cunoastere">
+                                <i>Cunoaștere</i>
+                            </label>
+                            <span>
+                                <input id="cunoastere" type="text" value="10" maxlength="3" size="3">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="rapiditate">
+                                <i>Rapiditate</i>
+                            </label>
+                            <span>
+                                <input id="rapiditate" type="text" value="10" maxlength="3" size="3">
+                            </span>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <strong>
+                Abilități
+            </strong>
+        </legend>
+        <table>
+            <tr>
+                <td>
+                    <ol type="A">
+                        <li>
+                            Forță corporală și mentală
+                            <ul type="square">
+                                <li>
+                                    <label>
+                                        <i>STR</i>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <i>CHA</i>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Agilitate corporală și mentală
+                            <ul type="square">
+                                <li>
+                                    <label>
+                                        <i>DEX</i>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <i>INT</i>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Rezistență corporală și mentală
+                            <ul type="square">
+                                <li>
+                                    <label>
+                                        <i>CON</i>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <i>WIS</i>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox" checked>
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                        <input type="checkbox" disabled>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <div>
+        <center>
+            <p>
+                Fii pregătit! Lupta abia a început!
+            </p>
+            <table border="5">
+                <tr>
+                    <td>
+                        <table border="5">
+                            <tr>
+                                <td>
+                                    <input type="button" value="SUBMIT">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+</form>
+</body>
+</html>

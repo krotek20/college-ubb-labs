@@ -1,0 +1,450 @@
+Materie ISS din cursuri:
+
+
+Activitati ale procesului de dezvoltare a softului
+◦ Colectarea cerintelor
+◦ Analiza cerintelor
+◦ Proiectarea de sistem
+◦ Proiectarea obiectuala
+◦ Implementarea
+◦ Testarea
+
+
+Definitia [Ingineria Programarii, eng. Software Engineering]: 
+    O colectie de tehnici, metodologii si instrumente care ajuta la producerea unor sisteme soft de calitate, dezvoltate cu un buget dat si cu încadrare în termene, în contextul unor permanente schimbari.
+
+
+Modelare:
+    este procesul de reprezentare a elementelor sau esentei unui sistem sau fenomen.
+
+Model: 
+    este o reprezentare simplificata a unui sistem sau fenomen, împreuna cu orice ipoteze necesare pentru a descrie sistemul sau a explica fenomenul.
+
+System:
+    Un ansamblu de parti interconectate => modelul este o abstractizare a sistemului
+
+Modelele sunt utile pentru studiul sistemelor:
+◦ prea mari/complexe
+◦ prea mici
+◦ costisitor/periculos de experimentat în realitate
+◦ care nu mai exista, care se presupune ca ar exista sau care urmeaza a fi construite
+
+
+Modele ale domeniului problemei: pentru a intelege mediul in care sistemul opereaza
+Modele ale domeniului solutiei: pentru a intelege sistemul care va fi construit si pentru a evalua solutiile si alternativele posibile
+
+
+Ingineria este o activitate de rezolvare de probleme în 5 pasi
+I1. Formularea problemei
+I2. Analiza problemei
+I3. Cautarea de solutii
+I4. Alegerea unei solutii potrivite
+◦ evaluari empirice, cu resurse limitate ¸si informatii incomplete
+I5. Specificarea solutiei alese
+
+
+Dezvoltarea de soft orientata obiect include, în general, 6 activitati
+D1. Colectarea cerintelor (corespondent I1)
+D2. Analiza cerintelor (corespondent I2)
+D3. Proiectarea de sistem (corespondent I3, I4)
+D4. Proiectarea obiectuala (corespondent I3, I4)
+D5. Implementarea (corespondent I5)
+D6. Testarea
+
+
+Dezvoltarea unui sistem soft necesita multe persoane:
+◦ Clientul comanda si achita sistemul
+◦ Dezvoltatorii construiesc sistemul
+◦ Project managerul planifica proiectul si coordoneaza dezvoltatorii si clientul
+◦ Utilizatorii folosesc sistemul si ofera cunostinte specifice domeniului (eng. domain knowledge)
+Un rol refera o multime de responsabilitati în cadrul proiectului
+
+
+Produse [curs 1]
+
+
+Activitate:
+    O multime de sarcini realizate cu un anumit scop.
+
+Sarcina:
+    O unitate atomica, gestionabila de lucru
+
+Resursa:
+    Bun utilizat pentru realizarea unor sarcini
+
+
+Cerinta functionala: specificare a unei functionalitati pe care sistemul va trebui sa o ofere
+◦ Ex.: Utilizatorul va putea sa achizitioneze bilete
+◦ Ex.: Utilizatorul va putea sa acceseze informatii legate de tarifare
+
+Cerinta nefunctional: constrangere legata de operarea sistemului (fara a fi asociata unei functionalitati anume)
+◦ Ex.: Sistemul va oferi feedback utilizatorului în mai putin de o secunda
+◦ Ex.: Culorile utilizate în interfata grafica vor fi cele ale companiei
+◦ Ex.: Se va folosi o anumita platforma hardware
+◦ Ex.: Se va asigura compatibilitatea cu un sistem mai vechi
+
+
+Notatie [curs 1]
+Metoda [curs 1]
+Metodologie [curs 1]
+
+
+Modelul functional: descriere a sistemului în termeni de actori si cazuri de utilizare
+· Actor = rol jucat de o entitate externa sistemului, care interactioneaza cu sistemul (utilizator uman, alt calculator/dispozitiv/sistem)
+· Caz de utilizare = secventa generala de evenimente descriind toate interactiunile posibile între un actor si sistem, pentru îndeplinirea unei anumite functionalitati
+
+
+Modelul obiectual:
+    - structura: model conceptual, diagrama de clase
+    - comportament: model dinamic, diagrama de interactiune
+    - contine doar concepte ce tin de domeniul problemei, nu si a solutiei
+
+
+Proiectarea de sistem:
+    Scopul acestei etape consta în definirea obiectivelor de proiectare si descompunerea sistemului în subsisteme. În cadrul acestei activitati, se decide asupra strategiilor utilizate pentru dezvoltarea sistemului. Se trece in domeniul solutiei.
+- Rezultatul proiectarii de sistem contine descrierea explicita a strategiilor mai sus mentionate, descompunerea sistemului si o diagrama de repartitie a resurselor (eng. deployment diagram)ilustrând maparea harware/software aferenta sistemului.
+
+
+Proiectarea obiectuala:
+    Scopul proiectarii obiectuale este definirea de obiecte/clase din domeniul solutiei, pentru a realiza legatura dintre modelul obiectual de analiza si platforma hardware/software stabilita la proiectarea de sistem.
+- Rezultatul proiectarii obiectuale îl constituie un model obiectual detaliat, îmbogatit cu constrângeri si descrieri precise ale tuturor elementelor componente.
+
+
+Tipuri de testare:
+◦ Testarea unitara - se compara modelul obiectual de proiectare cu fiecare obiect si subsistem (se planifica in timpul proiectarii obiectuale)
+◦ Testarea de integrare - se integreaza diferite subsisteme, comparându-se cu modelul corespunzator proiectarii de sistem (se planifica in timpul proiectarii de sistem)
+◦ Testarea de sistem - se compara comportamentul sistemului în ansamblu cu modelul cerintelor (se planifica in timpul colectarii si analizei cerintelor)
+
+
+Caz de utilizare:
+    O abstractizare ce acopera toate scenariile posibile aferente functionalitatii descrise
+
+Scenariu: O instanta a unui caz de utilizare, ce descrie o secventa corecta de actiuni/evenimente
+- Sablon Scenariu:
+    - Nume scenariu
+    - Intantele actorilor participanti 
+    - Fluxul de evenimente
+
+Relatii:
+- comunicare
+- incluziune
+- extindere (cel care extinde nu are semnificatie de sine statatoare, cel care este extins este definit independent)
+- generalizare
+
+
+Agregare: are, consta din, este format din (multiplicitate many)
+Compunere: agregare cu multiplicitate 1
+
+
+operatie - specificarea comportamentului
+metoda - implementarea comportamentului
+
+
+Diagrame de stari:
+O masina cu stari UML (eng. UML state machine):
+    Reprezinta o notatie folosita pentru a descrie succesiunea de stari prin care trece un obiect sub actiunea evenimentelor externe
+
+O stare (eng. state):
+    Reprezinta o conditie satisfacuta de valorile atributelor unui obiect
+    - activ, inactiv, inchis, arhivat [curs 2]
+
+O tranzitie (eng. transition):
+    Reprezinta o schimbare de stare, care poate fi provocata de declansarea unor evenimente, îndeplinirea unor conditii sau de trecerea unui anumit interval de timp.
+
+O actiune (eng. action):
+    Reprezinta o unitate fundamentala de procesare, care poate primi input-uri, poate produce output-uri si poate schimba starea sistemului.
+    - sunt atomice (nu pot fi intrerupte)
+
+Intr-o masina cu stari, actiunile pot fi localizate:
+- la nivelul unei tranzitii
+- la intrarea intr-o stare, introduse prin eticheta entry
+- la iesirea dintr-o stare, introduse prin eticheta exit
+
+Tranzitie interna: nu determina parasirea starii curente
+Activitate: multime coordonata de actiuni (introduse prin eticheta /do)
+
+Diagramele de tranzitie a starilor:
+- sunt folosite pentru modelarea comportamentului netrivial al obiectelor sau subsistemelor individuale
+- ajuta la identificarea atributelor obiectelor din domeniul problemei si la rafinarea descrierii comportamentului lor (in etapa de analiza)
+- ajuta la descrierea obiectelor din domeniul solutiei (in etapa de proiectare - Sablonul State)
+
+
+O diagrama de activitati (eng. activity diagram) descrie modul de realizare a unui anumit comportament în termenii uneia sau a mai multor secvente de activitati si a fluxurilor de obiecte necesare pentru coordonarea acestor activitati. Ofera o vedere centrata pe sarcini a comportamentului unei multimi de obiecte.
+
+Elementele de control (eng. control nodes) permit coordonarea fluxului de control dintr-o diagrama de activitati, oferind mecanisme de reprezentare a deciziilor, a concurentei si sincronizarii.
+
+Tipuri de elemente de control:
+- noduri decizionale - reprezinta o ramificare a fluxului de control, ce denota alternative pe baza unei conditii relativ la starea unui obiect sau grup de obiecte
+- noduri fork \ permit reprezentarea concurentei si a sincronizarii
+- noduri join / fork - divizare in threaduri, join - combinari threaduri intr-unul singur
+
+Diagramele de activitati:
+- pot descrie constrangeri privind secventierea cazurilor de utilizare
+- pot descrie activitati secventiale in cadrul unui grup de obiecte
+- pot descrie sarcinile unui proiect
+
+
+Ingineria cerintelor:
+- colectarea cerintelor (bazata pe scenarii - initiale sau ulterioare)
+    - cerinte nefunctionale
+    - modelul functional
+- analiza cerintelor
+    - modelul dinamic
+    - modelul obiectual de analiza
+
+
+Categorii de cerinte nefunctionale (de calitate), modelul FURPS+
+- Utilizabilitate (usability) - usurinta cu care un utilizator poate invata sa foloseasca sistemul
+- Performanta (performance)
+    - durata
+    - putere de calcul
+    - acuratetea rezultatelor
+    - disponibilitatea (cat de accesibil este un sistem)
+- Fiabilitate (reliability)
+    - abilitatea de a indeplinii functiile cerute
+    - corectitudine
+    - robustete (functionare corecta in conditii exceptionale)
+- Suportabilitate (suportability)
+    - usurinta modificarii sistemului dupa instalare
+    - adaptabilitate
+    - mentenabilitate (schimbare de sistem pentru a functiona cu noi tehnologii)
+    - internationalizare (limbi straine)
+- cerinte privind implementarea
+- cerinte privind interfata
+- cerinte privind modul de operare
+- cerinte privind instalarea
+- cerinte legale
+
+
+Validare:
+- Completitudine
+- Consistenta
+- Claritate 
+- Corectitudine
+
+Trasabilitatea (eng. traceability):
+    Reprezinta abilitatea de a urmari evolutia unei cerinte
+    - poate fi urmarita prin intretinerea de referinte intre documente, modele si cod
+    - fiecare element individual are un identificator unic
+
+Ingineria Greenfield:
+- procesul de dezvoltare incepe de la 0, nu exista un sistem anterior
+- cerintele sunt furnizate doar de client si utilizatori
+
+Re-inginerie:
+- reproiectare / reimplementare a unui sistem existent
+
+Ingineria interfetelor:
+- reproiectare / reimplementare doar a interfetei unui sistem existent
+
+
+Colectarea cerintelor - activitati tehnice:
+• Identificarea actorilor
+• Identificarea scenariilor
+• Identificarea cazurilor de utilizare
+• Rafinarea cazurilor de utilizare
+• Identificarea relatiilor între cazurile de utilizare
+• Identificarea cerintelor nefunctionale
+
+Rafinarea cazurilor de utilizare are detaliate urmatoarele aspecte:
+- informatia manipulata de sistem
+- interactiunile dintre actori si sistem
+- drepturile de acces
+- cazuri de exceptie
+- functionalitatea comuna (este factorizata)
+
+Identificarea relatiilor între cazurile de utilizare
+- reduce complexitatea modelului
+- elimina redundatele
+- elimina potentiale inconsistente
+
+
+Management
+
+Metoda JAD (Joint Application Design) - metoda de colectare a cerintelor
+- se aduna oameni intr-un workshop, idei, cerinte
+- la workshop asista un moderator
+
+Activitati JAD:
+- project definition
+- research
+- preparation
+- session
+- final document preparation
+
+
+Analiza cerintelor:
+- scopul este realizarea unui model al sistemului corect, complet, consistent si neambiguu
+- modelul obiectual de analiza
+- modelul dinamic
+
+Modelul obiectual de analiza:
+- Surprinde conceptele manipulate de sistem, proprietatile si relatiile acestora
+- Se reprezinta cu ajutorul diagramei de clase
+- O clasa din modelul de analiza reprezinta o abstractizare pentru una sau mai multe clase din codul sursa 
+
+Modelul dinamic:
+- Surprinde comportamentul sistemului
+- Reprezentat cu ajutorul diagramelor de secventa (comp. multime de obiecte) si al diagramelor de tranzitie a starilor (comp. un singur obiect)
+
+Modelele de analiza surprind doar concepte / atribute / relatii / comportamente percepute de utilizatori (domeniul problemei)
+
+Modelul obiectual de analiza consta din:
+- clase entity - interformatia persistenta
+- clase boundary - interactiunea actorilor cu sistemul
+- clase control - realizarea cazurilor de utilizare
+Avantaje:
+- clase / obiecte mai mici, specializate
+- modele mai usor de modificat
+
+Analiza cerintelor - activitati:
+• Identificarea claselor entity
+• Identificarea claselor boundary
+• Identificarea claselor control
+• Maparea cazurilor de utilizare la obiecte cu diagrame de secventa
+• Identificarea asocierilor
+• Identificarea agregarilor
+• Identificarea atributelor
+• Modelarea comportamentului obiectelor cu diagrame de stari
+    - cel mai frecvent pentru obiecte de tip control, mai putin frecvent pentru obiecte entity si aproape niciodata pentru obiecte boundary
+• Identificarea ierarhiilor de clase
+• Revizuirea modelului de analiza
+    - asigurarea corectitudinii, completitudinii, consistentei, realismului
+
+Identificarea claselor entity:
+- avantaje
+    - Metoda focusata pe terminologia utilizatorilor
+    - Rezultate bune atunci când se doreste identificarea claselor candidat pe baza unor descrieri scurte
+- dezavantaje
+    - Calitatea modelului obiectual e dependenta de stilul de specificare al analistului (claritate, consecventa în utilizarea termenilor)
+
+Sablonul documentului de analiza a cerintelor [curs 4 - final]
+
+
+Proiectarea de sistem:
+    Procesul de transformare a modelului rezultat din ingineria cerintelor într-un model arhitectural al sistemului
+
+Produse ale proiectarii de sistem:
+- Obiectivele de proiectare (design goals) - derivate din cerinte nefunctionale
+- Arhitectura sistemului
+    - Subsistemele componente
+    - Responsabilitatile subsistemelor si dependentele intre ele
+    - Maparea subsistemelor la hardware
+    - Strategii de dezvoltare:
+        - Fluxul global de control
+        - Strategia de gestionare a datelor cu caracter persistent
+        - Politica de control a accesului
+
+Activitati ale proiectarii de sistem:
+- Identificarea obiectivelor de proiectare
+- Descompunerea initiala a sistemului
+- Rafinarea descompunerii initiale in vederea atingerii obiectivelor de proiectare
+
+
+Subsistem = parte înlocuibila a unui sistem (constând într-un numar de clase din domeniul solutiei), caracterizata prin interfete bine definite, care încapsuleaza starea si comportamentul claselor componente. Sunt reprezentate ca si componente UML, cu relatii de dependenta intre ele
+O componenta UML poate reprezenta
+- o comp. logica - nu are echiv. runtime
+- o comp. fizica - are echiv. runtime
+
+Serviciu = multime de operatii inrudite (definite cu acelasi scop)
+    - se def. in timpul proiectarii de sistem
+Interfata = multime de operatii UML inrudite, complet specificate
+    - se def. in timpul proiectarii obiectuale
+API (Application Programming Interface) = specificare a unei interfete subsistem intr-un limbaj de programare
+    - se def. in etapa de implementare
+
+
+Cuplare = masura a dependetei dintre doua subsisteme
+- cuplare slaba - numar mic de dependente (relativ independente)
+- cuplare stransa - numar mare de dependente (dependente unul de altul)
+Coeziune = masura a dependentelor din interiorul unui subsistem
+- coeziune inalta - subsistemul contine un numar mare de clase puternic relationate si care efectueaza sarcini similare
+- coeziune slaba - subsistemul contine un numar de clase nerelationate
+
+
+Straturi (layers)
+- grup de subsisteme ce ofera servicii inrudite
+- ordonate, un strat poate accesa doar servicii ale straturilor inferioare
+    - arhitectura inchisa - acces doar la stratul imediat inferior (scop = modificabilitate/flexibilitate)
+    - arhitectura deschisa - acces la toate straturile inferioare (scop = eficienta)
+
+Partitionare (peers)
+- grup de subsisteme la acelasi nivel, fiecare fiind responsabil de o categorie diferita de servicii
+
+
+Arhitectura software = instanta a unui stil arhitectural
+
+Exemple de stiluri arhitecturale
+◦ Repository
+◦ Model-View-Controller
+◦ Client-Server
+◦ Peer-to-Peer
+◦ Three-tier architecture
+◦ Four-tier arhitecture
+◦ Pipes and filters
+[curs 5 - detalii + avantaje / dezavantaje + exemple]
+
+
+Obiective de proiectare = criterii de calitate pe care sistemul trebuie sa se focuseze
+Categorii de obiective de proiectare:
+1. performanta: timp de raspuns, puterea de calcul, memorie utilizata
+2. dependabilitate: robustete, fiabilitate, disponibilitate, toleranta la erori, securitate, siguranta
+3. cost: costuri de dezvoltare, instalare, întretinere, administrare
+4. întretinere: extensibilitate, modificabilitate, adaptabilitate, portabilitate,
+lizibilitate, trasabilitatea cerintelor
+5. criterii utilizator: utilitate, utilizabilitate
+
+1, 2, 5 - deduse din cerintele nefunctionale si domeniul problemei, restul sunt dictate de client si furnizor
+
+
+Descompunerea initiala a sistemului in subsisteme:
+- clasele de la nivelul aceluiasi caz de utilizare vor fi in acelasi subsistem
+- clasele utilizate pentru transport vor avea un subsistem separat (sau vor fi introduse in subsisteme deja existente - subsistemele care le creeaza)
+- toate clasele dintr-un subsistem trebuie sa fie inrudite functional
+
+Sablonul Fecade (fațadă)
+- permite reducerea dependentelor (cuplarii) dintre un subsistem si clientii sai
+- Ofera o interfata unificata, de nivel înalt, pentru un grup de interfete ale unui subsistem, care faciliteaza utilizarea acestuia
+- avantaje:
+    - interfata simpla
+    - diminuarea numarului de dependente
+    - stratificarea unui subsistem
+
+O diagrama de repartitie UML ilustreaza relatia dintre componentele runtime si noduri. La runtime, un sistem este reprezentat de o multime de componente care interactioneaza, distribuite la nivelul unor noduri
+- Componenta = unitate autocontinuta, care ofera servicii altor componente sau actorilor
+- Nod = dispozitiv fizic (calculator) sau mediu de executie pentru componente
+
+
+Sablonul Proxy - asigura, pentru un obiect, un surogat sau un inlocuitor, in scopul controlarii accesului la acesta
+Aplicabilitate:
+- proxy la distanta - ofera un reprezentant local pentru un obiect dintr-un spatiu de adresa diferit (ascunde faptul ca un obiect se afla intr-un alt spatiu de adresa)
+- proxy virtual - creeaza la cerere obiecte costisitoare (poate efectua optimizari, creeaza obiectul doar la cerere, doar cand e nevoie de el)
+
+
+• Când se folosesc fisiere?
+    ◦ Date voluminoase (imagini)
+    ◦ Date temporare
+    ◦ Densitate mica a informatiei (log-uri) 
+• Când se folosesc baze de date?
+    ◦ Acces concurent
+    ◦ Mai multe platforme sau aplicatii care acceseaza aceleasi date 
+• Când se folosesc baze de date relationale?
+    ◦ Interogari complexe
+    ◦ Seturi mari de date
+• Când se folosesc baze de date orientate obiect?
+    ◦ Utilizare masiva a asocierilor pentru regasirea datelor
+    ◦ Seturi de date medii
+
+
+Accesul la clase poate fi modelat folosind matrici de acces
+◦ Liniile reprezinta actorii din sistem
+◦ Coloanele reprezinta clasele ale caror drepturi de acces dorim sa fie modelate
+◦ O intrare în matrice listeaza operatiile care pot fi executate pe o instanta a clasei de pe coloana de catre actorul de pe linie
+
+
+Flux de control = secventierea actiunilor într-un sistem (ce operatii
+se executa si în ce ordine)
+- flux de control procedural (se asteapta input)
+- flux de control dirijat de evenimente (se asteapta evenimente externe)
+    - avantaje: abordare matura, structura simpla, centralizarea input-urilor
+- thread-uri

@@ -1,0 +1,4 @@
+class ValidatorProduse(object):
+    pass
+
+

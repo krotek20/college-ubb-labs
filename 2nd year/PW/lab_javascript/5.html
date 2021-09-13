@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .view {
+            height: 400px;
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            position: absolute;
+            transition: left 1000ms;
+        }
+
+        .item {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .item a {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 12px 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button id="back">Back</button>
+    <div class="view">
+        <ol id="list">
+            <li class="item">
+                <img alt="Image1" src="https://i.imgur.com/aOpcxV0.jpeg">
+                <a target="_blank" href="https://i.imgur.com/aOpcxV0.jpeg">
+                    Image1
+                </a>
+            </li>
+            <li class="item">
+                <img alt="Image2" src="https://i.imgur.com/uWLcXjQ.jpeg">
+                <a target="_blank" href="https://i.imgur.com/uWLcXjQ.jpeg">
+                    Image2
+                </a>
+            </li>
+            <li class="item">
+                <img alt="Image3" src="https://i.imgur.com/em95o9r.jpeg">
+                <a target="_blank" href="https://i.imgur.com/em95o9r.jpeg">
+                    Image3
+                </a>
+            </li>
+            <li class="item">
+                <img alt="Image4" src="https://i.imgur.com/VmkMUCM.jpeg">
+                <a target="_blank" href="https://i.imgur.com/VmkMUCM.jpeg">
+                    Image4
+                </a>
+            </li>
+            <li class="item">
+                <img alt="Image5" src="https://i.imgur.com/iOIK6Ty.jpeg">
+                <a target="_blank" href="https://i.imgur.com/iOIK6Ty.jpeg">
+                    Image5
+                </a>
+            </li>
+        </ol>
+    </div>
+    <button id="next">Next</button>
+</div>
+</body>
+<script src="5.js"></script>
+</html>

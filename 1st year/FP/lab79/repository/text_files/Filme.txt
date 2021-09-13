@@ -1,0 +1,5 @@
+1|Waking life|Great movie|Fantasy
+2|Enter the void|My favorite movie|Drama, Fantasy
+3|El Camino|Brbad, lol|Action, Drama
+4|Doctor Sleep|Misto|Horror
+5|Unul|Da|Action, Drama

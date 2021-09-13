@@ -1,0 +1,9 @@
+rootProject.name = 'proiect'
+include 'DonationModel'
+include 'DonationClient'
+include 'DonationNetworking'
+include 'DonationServices'
+include 'ChatServer'
+include 'DonationPersistence'
+include 'DonationServer'
+

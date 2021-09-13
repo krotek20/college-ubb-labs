@@ -1,0 +1,45 @@
+PW materie:
+
+HTML = Hyper Text Markup Language
+HTML ii spune browserului cum sa afiseze contentul
+<!DOCTYPE html> - defineste ca documentul este un HTML5 document (nu e case sensitive)
+<p> incepe mereu pe o linie noua si browserul automatic va adauga spatiu alb (margine) la inceputul si finalul paragrafului.
+Daca pui spatii sau muti textul pe urmatoarea linie intr-un <p> browserul le va ignora. <pre> tine cont de acest aspect si creeaza text preformatted.
+
+<b> bold			<string> important	<i> italic		<em> emphasized
+<mark> highlighted	<small> smaller		<del> deleted	<ins> inserted
+<sub> subscript		<sup> superscript
+
+HTML5 new: article, aside, header, footer, nav etc
+HTML4.01 dep: font, centrer, u , bgcolor, aligh etc
+
+
+SQL Injection
+- injectare de secvente de cod SQL de catre browser (client web) catre backend care ajunge sa execute aceste secvente.
+- validari riguroase pe backend. (chiar daca-s facute pe front)
+- prepared statement
+- addslashes
+- filter_var
+
+CSRF (Cross-Site Request Forgery)
+- permite unui atacator sa forteze un utilizator sa realizeze fara stirea lui diferite request-uri la nivelul aplicatiei web.
+- de obicei aceste request-uri se efectueaza cat timp utilizatorul este autentificat in aplicatie.
+- tokeni suplimentari ascunsi de validator (input de tip hidden). Durata de viata limitata, nereutilizabili.
+
+Unrestricted file upload
+- apare atunci cand un atacator incearca sa uploadeze in loc de fisiere (dintr-un input de tip file) acceptate (sa zicem imagini), script-uri .php sau altele care sa se salveze in folderul de fisiere destinat proiectului si care va putea apoi sa fie rulat de catre atacator.
+- nu e suficient atributul accept="image/png, image/jpeg" etc, pentru ca e validare doar la nivel de frontend (atacatorul poate sa schimbe acceptul din dev tools).
+- pentru evitare se recomanda verificarea riguroasa pe backend cel putin a extensiei fisierelor incarcate.
+- mai riguros, se poate verifica tipul fisierului incarcat accesand antetul (primii octeti) din cadrul fisierului sau cu o librarie specializata.
+
+Path traversal
+- atacatorul poate sa intreprinda actiuni in cadrul unui folder cu totul diferit fata de folderul in care in mod normal ar trebui intreprinse aceste actiuni
+
+XSS (Cross-site scripting / JavaScript Injection)
+- ca la SQL Injection se realizeaza, doar ca atacatorul trimite cod javascript catre server (fie prin POST, fie prin GET, prin intermediul QUERY_STRING-ului)
+- htmlentities (transforma < si > in entitatile html corespunzatoare (&lt; respectiv &gtl))
+- strip_tags (inlatura tag-urile html)
+
+SMTP (mail) headers injection
+- atacatorul poate sa modifice folosing Dev Tools in cadrul formularului de compunere a mesajului, inputul from cu un element textarea cu acelasi nume si poate sa adauge astfel si headerul CC: adresa_spamata@example.com
+- validarea adresei din campul from pe backend (filter_var($email, FILTER_VALIDATE_EMAIL))

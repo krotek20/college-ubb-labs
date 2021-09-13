@@ -1,0 +1,16 @@
+label {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+
+.align {
+    background-image: url("white_square.gif");
+    height: 18px;
+    background-size: 20px;
+    border: none;
+    font-family: monospace;
+    font-size: 13px;
+    padding-left: 7px;
+    letter-spacing: 12px;
+}

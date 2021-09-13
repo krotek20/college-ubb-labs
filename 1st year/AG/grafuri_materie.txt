@@ -1,0 +1,57 @@
+Strictul necesar: DFS, BFS, sortare topologica, Kosaraju-Sharir, Moore(BFS), Johnson, Prim/Kruskal, Pruffer, Huffman, Fleury/Hierholzer, Ford-Fulkerson
+
+
+
+1) parcurgeri:
+-DFS = sortare topologica, elemente conexe; orientat/neorientat
+-BFS = drumuri minime, Lee; orientat/neorientat
+-inchidere tranzitiva = complexitate Teta(n^3), shit; verifica daca exista drum intre toate nodurile; orientat/neorientat
+-sortare topologica = arbore; bazat pe DFS; orientat
+
+2) componente tare conexe
+-Kosaraju-Sharir
+
+3) drumuri minime
+-Lungime: 
+	Warshall = 3 for-uri; orientat/neorientat
+	Moore = BFS; orientat/neorientat
+	Lee = BFS si verificari daca sunt pereti sau nu; neorientat
+-Cost: 
+	Dijkstra = drum de cost minim; nu merge pe muchii de cost negativ; orientat/neorientat
+	Bellman-Ford = drum de cost minim; nu merge pe cicluri de cost negativ; orientat/neorientat
+	Johnson = toate drumurile de cost minim; se bazeaza pe Dijkstra si pe Bellman-Ford; foloseste un Bellman-Ford pentru a face toate muchiile de cost pozitiv si dupa aplica Dijkstra pornind de la fiecare varf; orientat/neorientat
+	Warshall = same as above
+
+4) mst (minimum spanning tree)
+-Prim = arbori neorientati; 
+-Kruskal = arbori neorientati; se foloseste de union_set
+
+5) codari
+-Pruffer = arbore
+	codare: lua frunzele cu indicele cel mai mic si scria parintele pana cand ramane doar radacina
+	decodare: sa gasea minimul care nu apare in vector; se da pop si se adauga muchia [nod_pop, min_nod_lipsa]; se adauga in vector min_nod_lipsa
+-Huffman = are nevoie de frecventa fiecarui caracter; se construieste un arbore
+	se pun intr-un priority queue toate caracterele, sortarea se face dupa frecventa lor si dupa caracter
+	se da pop la doua varfuri, se unesc, "caracterul" va fi minimul dintre ele, frecventa va fi suma si se pune in queue rezultatul
+	la gasirea codului, se parcurg nodurile pana se ajunge la frunze, la cod se pune 0 daca se parcurge pe stanga, 1 daca pe dreapta
+
+6) grafuri euleriene, hamiltoniene
+	graf eulerian = in care exista un ciclu care trece prin toate muchiile
+	graf hamiltonian = in care exista un ciclu care trece prin toate varfurile
+-Fleury (Euler)(Eu) = orientat/neorientat
+-Hierholzer (Euler)(Radu) = orientat/neorientat
+
+7) flux
+-Ford-Fulkerson = orientat
+	creeaza un graf rezidual (copie la inceput)
+	cat timp gaseste o cale reziduala => mareste/scade fluxul
+	cale reziduala cu BFS(s, t); daca ajunge la t atunci a gasit
+	gaseste capacitatea minima de pe calea reziduale
+	se mai parcurg muchiile (u, v) din calea reziduala:
+		daca (u, v) apartin G atunci se scade minimul
+		altfel se aduna la (v, u)
+	se aduna minimul la maxim
+	= Edmonds-Karp
+-pompare topologica
+-pompare preflux
+

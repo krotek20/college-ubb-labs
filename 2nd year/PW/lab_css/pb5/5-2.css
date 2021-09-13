@@ -1,0 +1,27 @@
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    border: solid;
+    width: 400px;
+    background: yellow;
+}
+
+img {
+    width: 130px;
+    height: 150px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px 0 10px;
+}
+
+.list:last-child {
+    margin: 10px;
+}
+
+p {
+    line-height: 100px;
+    padding-left: 10px;
+}

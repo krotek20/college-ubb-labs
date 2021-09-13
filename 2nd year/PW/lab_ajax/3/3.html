@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                Nume:
+            </td>
+            <td>
+                <input type="text" onchange="schimbareFacuta()" id="inputNume" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Prenume:
+            </td>
+            <td>
+                <input type="text" onchange="schimbareFacuta()" id="inputPrenume" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Telefon:
+            </td>
+            <td>
+                <input type="text" onchange="schimbareFacuta()" id="inputTelefon" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="text" onchange="schimbareFacuta()" id="inputEmail" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <button id="saveButton" disabled="disabled" onclick="saveChanges()">Save</button>
+    <div id="divLista"></div>
+</body>
+<!-- <script src="3a.js"></script> -->
+<script src="3b.min.js"></script>
+
+</html>

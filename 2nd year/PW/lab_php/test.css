@@ -1,0 +1,34 @@
+/* .info[id] {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: green;
+    background-color: orangered;
+} */
+
+/* #id2 {
+    background-color: blue;
+}
+
+div #id1 .class2 {
+    background-color: green;
+}
+
+div .class1 #id2 {
+    background-color: yellow;
+}
+
+#id1 {
+    background-color: red;
+} */
+
+.square {
+    background-color: indigo;
+}
+
+.patrat {
+    background-color: green;
+}
+
+div {
+    background-color: red;
+}

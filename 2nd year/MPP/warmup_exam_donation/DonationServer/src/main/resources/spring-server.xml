@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:utils="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <utils:properties id="jdbcProps" location="classpath:donationserver.properties"/>
+
+    <bean id="charityCaseRepo" class="donation.persistence.repository.CharityCaseDatabaseRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="donationRepo" class="donation.persistence.repository.DonationDatabaseRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="donorRepo" class="donation.persistence.repository.DonorDatabaseRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="volunteerRepo" class="donation.persistence.repository.VolunteerDatabaseRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="donationService" class="donation.server.DonationServicesImpl">
+        <constructor-arg ref="volunteerRepo"/>
+        <constructor-arg ref="donationRepo"/>
+        <constructor-arg ref="donorRepo"/>
+        <constructor-arg ref="charityCaseRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="Donation"/>
+        <property name="service" ref="donationService"/>
+        <property name="serviceInterface" value="donation.services.IDonationServices"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+
+
+
+</beans>

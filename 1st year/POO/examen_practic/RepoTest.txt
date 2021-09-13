@@ -1,0 +1,7 @@
+1 titlu1 artist2 1
+2 titlu2 artist2 3
+3 titlu3 artist2 2
+4 titlu4 artist3 2
+5 titlu5 artist3 5
+6 titlu6 artist3 7
+7 titlu7 artist3 7

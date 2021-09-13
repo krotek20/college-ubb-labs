@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="props" class="java.util.Properties">
+        <constructor-arg>
+            <props>
+                <prop key="host">127.0.0.1</prop>
+                <prop key="port">12820</prop>
+            </props>
+        </constructor-arg>
+    </bean>
+
+    <bean id="service" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+        <property name="serviceUrl" value="rmi://localhost:1099/ServerService"/>
+        <!-- <property name="serviceUrl" value="rmi://localhost:1099/Chat"/>-->
+        <property name="serviceInterface" value="service.IService"/>
+    </bean>
+</beans>

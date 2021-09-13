@@ -1,0 +1,6 @@
+rootProject.name = 'examenMpp'
+include 'Common'
+include 'Server'
+include 'Client'
+include 'RestServices'
+

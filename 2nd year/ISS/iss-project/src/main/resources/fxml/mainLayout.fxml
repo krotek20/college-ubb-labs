@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.radu.salesman.controllers.MainController">
+    <GridPane prefHeight="400.0" prefWidth="512.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.2" minWidth="10.0" prefWidth="396.2" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="30.19999999999999" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="175.19999999999993" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="64.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="64.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <HBox alignment="CENTER_LEFT" spacing="16.0" GridPane.columnSpan="3">
+            <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                <Button mnemonicParsing="false" onAction="#handleOpenCart" text="CART">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Button>
+                <VBox prefHeight="32.0" prefWidth="16.0" />
+                <Button mnemonicParsing="false" onAction="#handleLogOut" text="EXIT" />
+            </HBox>
+            <padding>
+                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+            </padding>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="92.0" prefWidth="600.0" spacing="16.0" GridPane.columnSpan="3" GridPane.rowIndex="1">
+            <padding>
+                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+            </padding>
+        </HBox>
+        <VBox prefHeight="272.0" prefWidth="234.0" GridPane.rowIndex="1" GridPane.rowSpan="2">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="405.0" text="PRODUCTS LIST" textAlignment="CENTER" textOverrun="CLIP">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="productsTable" prefHeight="316.0" prefWidth="367.0">
+                    <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="190.20001220703125" text="Product" />
+                        <TableColumn fx:id="priceColumn" prefWidth="81.0" text="Price" />
+                        <TableColumn fx:id="quantityColumn" prefWidth="91.19998779296873" text="In stock" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <children>
+                <HBox alignment="CENTER" prefHeight="38.0" prefWidth="175.0">
+                    <children>
+                        <TextField fx:id="quantityText" alignment="CENTER" prefHeight="26.0" prefWidth="122.0" promptText="QUANTITY" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="76.0" prefWidth="175.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleAddToCart" text="ADD TO CART" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="121.0" prefWidth="175.0">
+                    <children>
+                        <Button fx:id="manageProductsButton" mnemonicParsing="false" onAction="#handleOpenProductsMenu" text="MANAGE PRODUCTS" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </GridPane>
+</AnchorPane>

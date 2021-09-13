@@ -1,0 +1,420 @@
+1;Sorin Gheorghiu;Scoala Gimnaziala “Horea”;1
+2;Dumitru Marin;Scoala Gimnaziala “Horea”;1
+3;George Muresan;Scoala Gimnaziala “Horea”;1
+4;George Mocanu;Scoala Gimnaziala “Horea”;1
+5;Valentin Puscasu;Scoala Gimnaziala “Horea”;1
+6;Ilie Ifrim;Scoala Gimnaziala “Horea”;1
+7;Vlad Puscasu;Scoala Gimnaziala “Horea”;1
+8;Ion Mihailescu;Scoala Gimnaziala “Horea”;1
+9;Stefan Teodorescu;Scoala Gimnaziala “Horea”;1
+10;Eugen Andreescu;Scoala Gimnaziala “Horea”;1
+11;Catalin Negoita;Scoala Gimnaziala “Horea”;1
+12;Ioan Mihailescu;Scoala Gimnaziala “Horea”;1
+13;Tudor Diaconescu;Scoala Gimnaziala “Horea”;1
+14;Robert Mocanu;Scoala Gimnaziala “Horea”;1
+15;Marian Florea;Scoala Gimnaziala “Horea”;1
+16;Vlad Popescu;Scoala Gimnaziala "Octavian Goga";2
+17;Andrei Stan;Scoala Gimnaziala "Octavian Goga";2
+18;Bogdan Sava;Scoala Gimnaziala "Octavian Goga";2
+19;Andrei Tomescu;Scoala Gimnaziala "Octavian Goga";2
+20;Florin Gheorghiu;Scoala Gimnaziala "Octavian Goga";2
+21;Stefan Stoica;Scoala Gimnaziala "Octavian Goga";2
+22;Ion Negoita;Scoala Gimnaziala "Octavian Goga";2
+23;Sorin Muresan;Scoala Gimnaziala "Octavian Goga";2
+24;Razvan Barbu;Scoala Gimnaziala "Octavian Goga";2
+25;Vlad Gheorghiu;Scoala Gimnaziala "Octavian Goga";2
+26;Petru Tudor;Scoala Gimnaziala "Octavian Goga";2
+27;Alexandru Iancu;Scoala Gimnaziala "Octavian Goga";2
+28;Ilie Ciobanu;Scoala Gimnaziala "Octavian Goga";2
+29;Razvan Andreescu;Scoala Gimnaziala "Octavian Goga";2
+30;Vasile Tabacu;Scoala Gimnaziala "Octavian Goga";2
+31;Ilie Moisescu;Liceul Teoretic "Lucian Blaga";3
+32;Vasile Constantinescu;Liceul Teoretic "Lucian Blaga";3
+33;Victor Negoita;Liceul Teoretic "Lucian Blaga";3
+34;Tudor Toma;Liceul Teoretic "Lucian Blaga";3
+35;Gabriel Sava;Liceul Teoretic "Lucian Blaga";3
+36;Radu Sava;Liceul Teoretic "Lucian Blaga";3
+37;Razvan Ciobanu;Liceul Teoretic "Lucian Blaga";3
+38;Vasile Popa;Liceul Teoretic "Lucian Blaga";3
+39;Ioan Diaconescu;Liceul Teoretic "Lucian Blaga";3
+40;Marius Constantinescu;Liceul Teoretic "Lucian Blaga";3
+41;Dumitru Petrescu;Liceul Teoretic "Lucian Blaga";3
+42;Vlad Negoita;Liceul Teoretic "Lucian Blaga";3
+43;Valentin Diaconu;Liceul Teoretic "Lucian Blaga";3
+44;Octavian Dumitrescu;Liceul Teoretic "Lucian Blaga";3
+45;Marian Stanescu;Liceul Teoretic "Lucian Blaga";3
+46;Mihai Marin;Scoala Gimnaziala "Ioan Bob";4
+47;Nicolae Dumitrescu;Scoala Gimnaziala "Ioan Bob";4
+48;Constantin Cristea;Scoala Gimnaziala "Ioan Bob";4
+49;Florin Georgescu;Scoala Gimnaziala "Ioan Bob";4
+50;Andrei Ciobanu;Scoala Gimnaziala "Ioan Bob";4
+51;Petru Dumitrescu;Scoala Gimnaziala "Ioan Bob";4
+52;Ilie Pop;Scoala Gimnaziala "Ioan Bob";4
+53;Ioan Popescu;Scoala Gimnaziala "Ioan Bob";4
+54;Stefan Barbu;Scoala Gimnaziala "Ioan Bob";4
+55;Iulian Teodorescu;Scoala Gimnaziala "Ioan Bob";4
+56;Constantin Dobre;Scoala Gimnaziala "Ioan Bob";4
+57;Lucian Dima;Scoala Gimnaziala "Ioan Bob";4
+58;Constantin Georgescu;Scoala Gimnaziala "Ioan Bob";4
+59;Marian Florea;Scoala Gimnaziala "Ioan Bob";4
+60;Sorin Stoica;Scoala Gimnaziala "Ioan Bob";4
+61;Ilie Munteanu;Scoala Gimnaziala "Ion Creanga";5
+62;George Ursu;Scoala Gimnaziala "Ion Creanga";5
+63;Ionel Petrescu;Scoala Gimnaziala "Ion Creanga";5
+64;Catalin Toma;Scoala Gimnaziala "Ion Creanga";5
+65;Ioan Ursu;Scoala Gimnaziala "Ion Creanga";5
+66;Eugen Popescu;Scoala Gimnaziala "Ion Creanga";5
+67;George Voinea;Scoala Gimnaziala "Ion Creanga";5
+68;Constantin Voinea;Scoala Gimnaziala "Ion Creanga";5
+69;Iulian Tomescu;Scoala Gimnaziala "Ion Creanga";5
+70;Ion Diaconu;Scoala Gimnaziala "Ion Creanga";5
+71;Ilie Ciobanu;Scoala Gimnaziala "Ion Creanga";5
+72;Lucian Tudor;Scoala Gimnaziala "Ion Creanga";5
+73;Nicolae Muresan;Scoala Gimnaziala "Ion Creanga";5
+74;Lucian Stanciu;Scoala Gimnaziala "Ion Creanga";5
+75;Eugen Sava;Scoala Gimnaziala "Ion Creanga";5
+76;George Moldoveanu;Colegiul National Pedagogic "Gheorghe Lazar";6
+77;Razvan Puscasu;Colegiul National Pedagogic "Gheorghe Lazar";6
+78;Ciprian Nitu;Colegiul National Pedagogic "Gheorghe Lazar";6
+79;Razvan Marin;Colegiul National Pedagogic "Gheorghe Lazar";6
+80;Valentin Teodorescu;Colegiul National Pedagogic "Gheorghe Lazar";6
+81;Stefan Moisescu;Colegiul National Pedagogic "Gheorghe Lazar";6
+82;Petru Andreescu;Colegiul National Pedagogic "Gheorghe Lazar";6
+83;Octavian Marin;Colegiul National Pedagogic "Gheorghe Lazar";6
+84;Victor Nitu;Colegiul National Pedagogic "Gheorghe Lazar";6
+85;Eugen Lupu;Colegiul National Pedagogic "Gheorghe Lazar";6
+86;Robert Albu;Colegiul National Pedagogic "Gheorghe Lazar";6
+87;Ovidiu Dima;Colegiul National Pedagogic "Gheorghe Lazar";6
+88;Catalin Dobre;Colegiul National Pedagogic "Gheorghe Lazar";6
+89;Florin Stan;Colegiul National Pedagogic "Gheorghe Lazar";6
+90;Nicolae Muresan;Colegiul National Pedagogic "Gheorghe Lazar";6
+91;Eugen Nistor;Scoala Gimnaziala Internationala SPECTRUM;7
+92;Dumitru Toma;Scoala Gimnaziala Internationala SPECTRUM;7
+93;Gabriel Stan;Scoala Gimnaziala Internationala SPECTRUM;7
+94;Cristian Munteanu;Scoala Gimnaziala Internationala SPECTRUM;7
+95;Radu Stanciu;Scoala Gimnaziala Internationala SPECTRUM;7
+96;Vlad Nistor;Scoala Gimnaziala Internationala SPECTRUM;7
+97;Marian Puscasu;Scoala Gimnaziala Internationala SPECTRUM;7
+98;Tudor Popa;Scoala Gimnaziala Internationala SPECTRUM;7
+99;Ovidiu Muresan;Scoala Gimnaziala Internationala SPECTRUM;7
+100;Bogdan Constantinescu;Scoala Gimnaziala Internationala SPECTRUM;7
+101;Eugen Voinea;Scoala Gimnaziala Internationala SPECTRUM;7
+102;Cristian Stanciu;Scoala Gimnaziala Internationala SPECTRUM;7
+103;Octavian Iancu;Scoala Gimnaziala Internationala SPECTRUM;7
+104;Octavian Cristea;Scoala Gimnaziala Internationala SPECTRUM;7
+105;Florin Stoica;Scoala Gimnaziala Internationala SPECTRUM;7
+106;Ilie Stanescu;Colegiul National „Emil Racovita”;8
+107;Victor Sava;Colegiul National „Emil Racovita”;8
+108;Octavian Dumitrescu;Colegiul National „Emil Racovita”;8
+109;Marius Tudor;Colegiul National „Emil Racovita”;8
+110;Catalin Sava;Colegiul National „Emil Racovita”;8
+111;Alexandru Constantinescu;Colegiul National „Emil Racovita”;8
+112;Vasile Lupu;Colegiul National „Emil Racovita”;8
+113;Alexandru Albu;Colegiul National „Emil Racovita”;8
+114;Vasile Stanciu;Colegiul National „Emil Racovita”;8
+115;Cristian Stoica;Colegiul National „Emil Racovita”;8
+116;Valentin Florea;Colegiul National „Emil Racovita”;8
+117;Petru Marin;Colegiul National „Emil Racovita”;8
+118;Victor Dinescu;Colegiul National „Emil Racovita”;8
+119;Mihai Albu;Colegiul National „Emil Racovita”;8
+120;Lucian Stoica;Colegiul National „Emil Racovita”;8
+121;Florin Tomescu;Colegiul National "George Cosbuc";9
+122;Lucian Florea;Colegiul National "George Cosbuc";9
+123;Marius Constantinescu;Colegiul National "George Cosbuc";9
+124;Valentin Albu;Colegiul National "George Cosbuc";9
+125;Sorin Munteanu;Colegiul National "George Cosbuc";9
+126;Ovidiu Manole;Colegiul National "George Cosbuc";9
+127;Vasile Diaconu;Colegiul National "George Cosbuc";9
+128;Ionut Muresan;Colegiul National "George Cosbuc";9
+129;Marius Mocanu;Colegiul National "George Cosbuc";9
+130;Florin Diaconescu;Colegiul National "George Cosbuc";9
+131;Iulian Andreescu;Colegiul National "George Cosbuc";9
+132;Gabriel Rusu;Colegiul National "George Cosbuc";9
+133;Octavian Stanescu;Colegiul National "George Cosbuc";9
+134;Razvan Stanescu;Colegiul National "George Cosbuc";9
+135;Radu Cristea;Colegiul National "George Cosbuc";9
+136;Mihai Ciobanu;Scoala Gimnaziala "Ion Agarbiceanu";10
+137;Cosmin Pop;Scoala Gimnaziala "Ion Agarbiceanu";10
+138;Ciprian Florea;Scoala Gimnaziala "Ion Agarbiceanu";10
+139;Catalin Negoita;Scoala Gimnaziala "Ion Agarbiceanu";10
+140;Iulian Iancu;Scoala Gimnaziala "Ion Agarbiceanu";10
+141;Andrei Muresan;Scoala Gimnaziala "Ion Agarbiceanu";10
+142;Catalin Mocanu;Scoala Gimnaziala "Ion Agarbiceanu";10
+143;Lucian Teodorescu;Scoala Gimnaziala "Ion Agarbiceanu";10
+144;Adrian Dinescu;Scoala Gimnaziala "Ion Agarbiceanu";10
+145;Florin Nita;Scoala Gimnaziala "Ion Agarbiceanu";10
+146;Marian Toma;Scoala Gimnaziala "Ion Agarbiceanu";10
+147;Gheorghe Stanciu;Scoala Gimnaziala "Ion Agarbiceanu";10
+148;Victor Barbu;Scoala Gimnaziala "Ion Agarbiceanu";10
+149;Gabriel Moisescu;Scoala Gimnaziala "Ion Agarbiceanu";10
+150;Nicolae Cristea;Scoala Gimnaziala "Ion Agarbiceanu";10
+151;Nicolae Andreescu;Liceul Teoretic "Avram Iancu";11
+152;Vlad Nita;Liceul Teoretic "Avram Iancu";11
+153;Sorin Stan;Liceul Teoretic "Avram Iancu";11
+154;Eugen Marin;Liceul Teoretic "Avram Iancu";11
+155;Vlad Munteanu;Liceul Teoretic "Avram Iancu";11
+156;Vasile Ionita;Liceul Teoretic "Avram Iancu";11
+157;Tudor Tudor;Liceul Teoretic "Avram Iancu";11
+158;Gheorghe Munteanu;Liceul Teoretic "Avram Iancu";11
+159;Gabriel Sava;Liceul Teoretic "Avram Iancu";11
+160;Mihai Nita;Liceul Teoretic "Avram Iancu";11
+161;Ionel Fratila;Liceul Teoretic "Avram Iancu";11
+162;Catalin Ciobanu;Liceul Teoretic "Avram Iancu";11
+163;Gheorghe Mocanu;Liceul Teoretic "Avram Iancu";11
+164;Vasile Diaconescu;Liceul Teoretic "Avram Iancu";11
+165;Marian Dinescu;Liceul Teoretic "Avram Iancu";11
+166;Alexandru Cristea;Scoala Gimnaziala "Constantin Brancusi";12
+167;Ionel Tabacu;Scoala Gimnaziala "Constantin Brancusi";12
+168;Stefan Ionita;Scoala Gimnaziala "Constantin Brancusi";12
+169;Andrei Georgescu;Scoala Gimnaziala "Constantin Brancusi";12
+170;Ovidiu Diaconescu;Scoala Gimnaziala "Constantin Brancusi";12
+171;Ilie Moldoveanu;Scoala Gimnaziala "Constantin Brancusi";12
+172;Sorin Dinu;Scoala Gimnaziala "Constantin Brancusi";12
+173;Radu Tabacu;Scoala Gimnaziala "Constantin Brancusi";12
+174;Sorin Nitu;Scoala Gimnaziala "Constantin Brancusi";12
+175;Razvan Constantinescu;Scoala Gimnaziala "Constantin Brancusi";12
+176;Octavian Mocanu;Scoala Gimnaziala "Constantin Brancusi";12
+177;Ovidiu Dobre;Scoala Gimnaziala "Constantin Brancusi";12
+178;Alexandru Ifrim;Scoala Gimnaziala "Constantin Brancusi";12
+179;Nicolae Popa;Scoala Gimnaziala "Constantin Brancusi";12
+180;Ciprian Dumitrescu;Scoala Gimnaziala "Constantin Brancusi";12
+181;Robert Diaconu;Liceul Teoretic "Onisifor Ghibu";13
+182;Andrei Florea;Liceul Teoretic "Onisifor Ghibu";13
+183;Razvan Rusu;Liceul Teoretic "Onisifor Ghibu";13
+184;Cosmin Negoita;Liceul Teoretic "Onisifor Ghibu";13
+185;Razvan Stanciu;Liceul Teoretic "Onisifor Ghibu";13
+186;Ciprian Moisescu;Liceul Teoretic "Onisifor Ghibu";13
+187;Adrian Stanescu;Liceul Teoretic "Onisifor Ghibu";13
+188;Ionut Muresan;Liceul Teoretic "Onisifor Ghibu";13
+189;Dumitru Nitu;Liceul Teoretic "Onisifor Ghibu";13
+190;Eugen Georgescu;Liceul Teoretic "Onisifor Ghibu";13
+191;Robert Dima;Liceul Teoretic "Onisifor Ghibu";13
+192;Ciprian Pop;Liceul Teoretic "Onisifor Ghibu";13
+193;George Voinea;Liceul Teoretic "Onisifor Ghibu";13
+194;Razvan Nistor;Liceul Teoretic "Onisifor Ghibu";13
+195;Ilie Voinea;Liceul Teoretic "Onisifor Ghibu";13
+196;Victor Popescu;Liceul Teoretic "Onisifor Ghibu";14
+197;Ciprian Puscasu;Liceul Teoretic "Onisifor Ghibu";14
+198;Sorin Albu;Liceul Teoretic "Onisifor Ghibu";14
+199;Ciprian Barbu;Liceul Teoretic "Onisifor Ghibu";14
+200;Lucian Pop;Liceul Teoretic "Onisifor Ghibu";14
+201;Vasile Ciobanu;Liceul Teoretic "Onisifor Ghibu";14
+202;Nicolae Stanescu;Liceul Teoretic "Onisifor Ghibu";14
+203;George Pop;Liceul Teoretic "Onisifor Ghibu";14
+204;Valentin Dima;Liceul Teoretic "Onisifor Ghibu";14
+205;Daniel Dima;Liceul Teoretic "Onisifor Ghibu";14
+206;Vasile Marin;Liceul Teoretic "Onisifor Ghibu";14
+207;Florin Dobre;Liceul Teoretic "Onisifor Ghibu";14
+208;Gabriel Puscasu;Liceul Teoretic "Onisifor Ghibu";14
+209;Vlad Popescu;Liceul Teoretic "Onisifor Ghibu";14
+210;Tudor Marin;Liceul Teoretic "Onisifor Ghibu";14
+211;Tudor Nistor;Liceul cu Program Sportiv Cluj-Napoca;15
+212;Alexandru Ionita;Liceul cu Program Sportiv Cluj-Napoca;15
+213;Constantin Ciobanu;Liceul cu Program Sportiv Cluj-Napoca;15
+214;Marius Dinu;Liceul cu Program Sportiv Cluj-Napoca;15
+215;Ilie Cristea;Liceul cu Program Sportiv Cluj-Napoca;15
+216;Mihai Dinu;Liceul cu Program Sportiv Cluj-Napoca;15
+217;Catalin Sava;Liceul cu Program Sportiv Cluj-Napoca;15
+218;Mihai Stan;Liceul cu Program Sportiv Cluj-Napoca;15
+219;Robert Nitu;Liceul cu Program Sportiv Cluj-Napoca;15
+220;Cosmin Florea;Liceul cu Program Sportiv Cluj-Napoca;15
+221;Adrian Manole;Liceul cu Program Sportiv Cluj-Napoca;15
+222;Daniel Munteanu;Liceul cu Program Sportiv Cluj-Napoca;15
+223;Marius Puscasu;Liceul cu Program Sportiv Cluj-Napoca;15
+224;Victor Georgescu;Liceul cu Program Sportiv Cluj-Napoca;15
+225;Bogdan Ionescu;Liceul cu Program Sportiv Cluj-Napoca;15
+226;Radu Rusu;Liceul Teoretic "Nicolae Balcescu";16
+227;Nicolae Fratila;Liceul Teoretic "Nicolae Balcescu";16
+228;Ionut Popescu;Liceul Teoretic "Nicolae Balcescu";16
+229;Dumitru Constantinescu;Liceul Teoretic "Nicolae Balcescu";16
+230;Gabriel Ursu;Liceul Teoretic "Nicolae Balcescu";16
+231;Robert Nita;Liceul Teoretic "Nicolae Balcescu";16
+232;Cristian Cristea;Liceul Teoretic "Nicolae Balcescu";16
+233;Ionut Moisescu;Liceul Teoretic "Nicolae Balcescu";16
+234;Razvan Barbu;Liceul Teoretic "Nicolae Balcescu";16
+235;Marian Gheorghiu;Liceul Teoretic "Nicolae Balcescu";16
+236;Radu Puscasu;Liceul Teoretic "Nicolae Balcescu";16
+237;Nicolae Toma;Liceul Teoretic "Nicolae Balcescu";16
+238;Marius Dinu;Liceul Teoretic "Nicolae Balcescu";16
+239;Daniel Marin;Liceul Teoretic "Nicolae Balcescu";16
+240;Adrian Stanescu;Liceul Teoretic "Nicolae Balcescu";16
+241;Ovidiu Muresan;Liceul Teoretic "Gheorghe Sincai";17
+242;Mihai Calinescu;Liceul Teoretic "Gheorghe Sincai";17
+243;Radu Dinu;Liceul Teoretic "Gheorghe Sincai";17
+244;Alexandru Stan;Liceul Teoretic "Gheorghe Sincai";17
+245;Ciprian Nitu;Liceul Teoretic "Gheorghe Sincai";17
+246;Valentin Ursu;Liceul Teoretic "Gheorghe Sincai";17
+247;Vlad Moisescu;Liceul Teoretic "Gheorghe Sincai";17
+248;Catalin Tabacu;Liceul Teoretic "Gheorghe Sincai";17
+249;Vasile Cristea;Liceul Teoretic "Gheorghe Sincai";17
+250;Sorin Dobre;Liceul Teoretic "Gheorghe Sincai";17
+251;Petru Cristea;Liceul Teoretic "Gheorghe Sincai";17
+252;Cristian Nita;Liceul Teoretic "Gheorghe Sincai";17
+253;Cristian Stanciu;Liceul Teoretic "Gheorghe Sincai";17
+254;Gabriel Munteanu;Liceul Teoretic "Gheorghe Sincai";17
+255;Florin Ursu;Liceul Teoretic "Gheorghe Sincai";17
+256;Robert Georgescu;Scoala "Nicolae Titulescu";18
+257;Mihai Ursu;Scoala "Nicolae Titulescu";18
+258;Eugen Popa;Scoala "Nicolae Titulescu";18
+259;Octavian Barbu;Scoala "Nicolae Titulescu";18
+260;Radu Rusu;Scoala "Nicolae Titulescu";18
+261;Eugen Stanescu;Scoala "Nicolae Titulescu";18
+262;Ionel Nita;Scoala "Nicolae Titulescu";18
+263;Razvan Pop;Scoala "Nicolae Titulescu";18
+264;Victor Stoica;Scoala "Nicolae Titulescu";18
+265;Ionut Tudor;Scoala "Nicolae Titulescu";18
+266;Andrei Cristea;Scoala "Nicolae Titulescu";18
+267;Ionel Ursu;Scoala "Nicolae Titulescu";18
+268;Razvan Ionita;Scoala "Nicolae Titulescu";18
+269;Iulian Popescu;Scoala "Nicolae Titulescu";18
+270;Ciprian Puscasu;Scoala "Nicolae Titulescu";18
+271;Adrian Marin;Scoala Gimnaziala "Liviu Rebreanu";19
+272;Alexandru Negoita;Scoala Gimnaziala "Liviu Rebreanu";19
+273;Constantin Ionescu;Scoala Gimnaziala "Liviu Rebreanu";19
+274;Cosmin Ionescu;Scoala Gimnaziala "Liviu Rebreanu";19
+275;Octavian Diaconu;Scoala Gimnaziala "Liviu Rebreanu";19
+276;Ilie Popescu;Scoala Gimnaziala "Liviu Rebreanu";19
+277;Radu Calinescu;Scoala Gimnaziala "Liviu Rebreanu";19
+278;Gheorghe Marin;Scoala Gimnaziala "Liviu Rebreanu";19
+279;Octavian Stan;Scoala Gimnaziala "Liviu Rebreanu";19
+280;Gabriel Stanciu;Scoala Gimnaziala "Liviu Rebreanu";19
+281;Constantin Teodorescu;Scoala Gimnaziala "Liviu Rebreanu";19
+282;Sorin Mihailescu;Scoala Gimnaziala "Liviu Rebreanu";19
+283;Dumitru Tudor;Scoala Gimnaziala "Liviu Rebreanu";19
+284;Ovidiu Fratila;Scoala Gimnaziala "Liviu Rebreanu";19
+285;Ilie Sava;Scoala Gimnaziala "Liviu Rebreanu";19
+286;Catalin Ifrim;Scoala Gimnaziala "Iuliu Hatieganu";20
+287;Ionel Stan;Scoala Gimnaziala "Iuliu Hatieganu";20
+288;Dumitru Tomescu;Scoala Gimnaziala "Iuliu Hatieganu";20
+289;Lucian Toma;Scoala Gimnaziala "Iuliu Hatieganu";20
+290;Robert Rusu;Scoala Gimnaziala "Iuliu Hatieganu";20
+291;Ioan Mihailescu;Scoala Gimnaziala "Iuliu Hatieganu";20
+292;Ioan Tomescu;Scoala Gimnaziala "Iuliu Hatieganu";20
+293;Vasile Popa;Scoala Gimnaziala "Iuliu Hatieganu";20
+294;Radu Tomescu;Scoala Gimnaziala "Iuliu Hatieganu";20
+295;Gabriel Voinea;Scoala Gimnaziala "Iuliu Hatieganu";20
+296;Cristian Georgescu;Scoala Gimnaziala "Iuliu Hatieganu";20
+297;Sorin Petrescu;Scoala Gimnaziala "Iuliu Hatieganu";20
+298;Gheorghe Stan;Scoala Gimnaziala "Iuliu Hatieganu";20
+299;Ionel Stan;Scoala Gimnaziala "Iuliu Hatieganu";20
+300;Bogdan Ifrim;Scoala Gimnaziala "Iuliu Hatieganu";20
+301;Marius Tudor;Liceul Teoretic "Bathory Istvan";21
+302;Andrei Barbu;Liceul Teoretic "Bathory Istvan";21
+303;Ilie Tabacu;Liceul Teoretic "Bathory Istvan";21
+304;George Tomescu;Liceul Teoretic "Bathory Istvan";21
+305;Constantin Ursu;Liceul Teoretic "Bathory Istvan";21
+306;Cosmin Dinu;Liceul Teoretic "Bathory Istvan";21
+307;Vasile Stanescu;Liceul Teoretic "Bathory Istvan";21
+308;Vlad Dinescu;Liceul Teoretic "Bathory Istvan";21
+309;Valentin Popescu;Liceul Teoretic "Bathory Istvan";21
+310;Ion Puscasu;Liceul Teoretic "Bathory Istvan";21
+311;Catalin Stanciu;Liceul Teoretic "Bathory Istvan";21
+312;Alexandru Diaconescu;Liceul Teoretic "Bathory Istvan";21
+313;Ioan Pop;Liceul Teoretic "Bathory Istvan";21
+314;Vasile Pop;Liceul Teoretic "Bathory Istvan";21
+315;Razvan Petrescu;Liceul Teoretic "Bathory Istvan";21
+316;Mihai Diaconescu;Colegiul National "George Baritiu";22
+317;Vasile Sava;Colegiul National "George Baritiu";22
+318;Stefan Stanciu;Colegiul National "George Baritiu";22
+319;Ovidiu Stan;Colegiul National "George Baritiu";22
+320;Dumitru Fratila;Colegiul National "George Baritiu";22
+321;Cosmin Constantinescu;Colegiul National "George Baritiu";22
+322;George Stanescu;Colegiul National "George Baritiu";22
+323;Victor Mihailescu;Colegiul National "George Baritiu";22
+324;Ionut Pop;Colegiul National "George Baritiu";22
+325;Ovidiu Negoita;Colegiul National "George Baritiu";22
+326;Dumitru Manole;Colegiul National "George Baritiu";22
+327;Lucian Tomescu;Colegiul National "George Baritiu";22
+328;Stefan Popa;Colegiul National "George Baritiu";22
+329;Constantin Cristea;Colegiul National "George Baritiu";22
+330;Victor Teodorescu;Colegiul National "George Baritiu";22
+331;Cosmin Fratila;Liceul Teoretic "Apaczai Csere Janos";23
+332;Victor Rusu;Liceul Teoretic "Apaczai Csere Janos";23
+333;Cosmin Stanciu;Liceul Teoretic "Apaczai Csere Janos";23
+334;Andrei Diaconescu;Liceul Teoretic "Apaczai Csere Janos";23
+335;Ionut Cristea;Liceul Teoretic "Apaczai Csere Janos";23
+336;Ionel Nistor;Liceul Teoretic "Apaczai Csere Janos";23
+337;Vasile Dima;Liceul Teoretic "Apaczai Csere Janos";23
+338;Alexandru Fratila;Liceul Teoretic "Apaczai Csere Janos";23
+339;Razvan Dinescu;Liceul Teoretic "Apaczai Csere Janos";23
+340;Ionel Manole;Liceul Teoretic "Apaczai Csere Janos";23
+341;Ilie Tudor;Liceul Teoretic "Apaczai Csere Janos";23
+342;Cristian Moldoveanu;Liceul Teoretic "Apaczai Csere Janos";23
+343;Petru Voinea;Liceul Teoretic "Apaczai Csere Janos";23
+344;Petru Tomescu;Liceul Teoretic "Apaczai Csere Janos";23
+345;Vasile Diaconu;Liceul Teoretic "Apaczai Csere Janos";23
+346;Victor Ionita;Seminarul Teologic Ortodox;24
+347;Constantin Muresan;Seminarul Teologic Ortodox;24
+348;Ciprian Tudor;Seminarul Teologic Ortodox;24
+349;Marius Ciobanu;Seminarul Teologic Ortodox;24
+350;Ilie Ursu;Seminarul Teologic Ortodox;24
+351;Ovidiu Puscasu;Seminarul Teologic Ortodox;24
+352;Tudor Ionita;Seminarul Teologic Ortodox;24
+353;Gheorghe Fratila;Seminarul Teologic Ortodox;24
+354;Constantin Georgescu;Seminarul Teologic Ortodox;24
+355;Cosmin Stanciu;Seminarul Teologic Ortodox;24
+356;Bogdan Mihailescu;Seminarul Teologic Ortodox;24
+357;Octavian Barbu;Seminarul Teologic Ortodox;24
+358;Tudor Dinu;Seminarul Teologic Ortodox;24
+359;Ionut Constantinescu;Seminarul Teologic Ortodox;24
+360;Petru Stan;Seminarul Teologic Ortodox;24
+361;Bogdan Georgescu;Liceul de Informatica "Tiberiu Popoviciu";25
+362;Florin Tomescu;Liceul de Informatica "Tiberiu Popoviciu";25
+363;Dumitru Florea;Liceul de Informatica "Tiberiu Popoviciu";25
+364;Andrei Voinea;Liceul de Informatica "Tiberiu Popoviciu";25
+365;Valentin Lupu;Liceul de Informatica "Tiberiu Popoviciu";25
+366;Florin Pop;Liceul de Informatica "Tiberiu Popoviciu";25
+367;Ioan Mihailescu;Liceul de Informatica "Tiberiu Popoviciu";25
+368;Razvan Nistor;Liceul de Informatica "Tiberiu Popoviciu";25
+369;Vasile Popescu;Liceul de Informatica "Tiberiu Popoviciu";25
+370;Gheorghe Mocanu;Liceul de Informatica "Tiberiu Popoviciu";25
+371;Constantin Diaconu;Liceul de Informatica "Tiberiu Popoviciu";25
+372;Alexandru Stanciu;Liceul de Informatica "Tiberiu Popoviciu";25
+373;Daniel Ionescu;Liceul de Informatica "Tiberiu Popoviciu";25
+374;Cristian Tabacu;Liceul de Informatica "Tiberiu Popoviciu";25
+375;Petru Florea;Liceul de Informatica "Tiberiu Popoviciu";25
+376;Florin Nitu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+377;Robert Andreescu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+378;Ioan Dinescu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+379;Catalin Dobre;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+380;Iulian Popa;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+381;Bogdan Ursu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+382;Tudor Teodorescu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+383;Adrian Ionita;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+384;Ioan Constantinescu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+385;Ion Stanescu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+386;Andrei Nitu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+387;Vlad Dinu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+388;Victor Andreescu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+389;George Ifrim;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+390;Stefan Tomescu;Scoala Gimnaziala „Alexandru Vaida –Voevod";26
+391;Ionut Constantinescu;Liceul Teoretic ELF;27
+392;Sorin Stan;Liceul Teoretic ELF;27
+393;Lucian Ionescu;Liceul Teoretic ELF;27
+394;Cristian Toma;Liceul Teoretic ELF;27
+395;George Dinu;Liceul Teoretic ELF;27
+396;Ovidiu Ionescu;Liceul Teoretic ELF;27
+397;Valentin Florea;Liceul Teoretic ELF;27
+398;Marian Voinea;Liceul Teoretic ELF;27
+399;Stefan Nitu;Liceul Teoretic ELF;27
+400;Florin Moisescu;Liceul Teoretic ELF;27
+401;Ionel Constantinescu;Liceul Teoretic ELF;27
+402;George Marin;Liceul Teoretic ELF;27
+403;Bogdan Popa;Liceul Teoretic ELF;27
+404;Gheorghe Diaconu;Liceul Teoretic ELF;27
+405;Tudor Stanescu;Liceul Teoretic ELF;27
+406;Octavian Voinea;Scoala Gimnaziala "Gheorghe Sincai";28
+407;Radu Teodorescu;Scoala Gimnaziala "Gheorghe Sincai";28
+408;Tudor Dumitrescu;Scoala Gimnaziala "Gheorghe Sincai";28
+409;Mihai Muresan;Scoala Gimnaziala "Gheorghe Sincai";28
+410;Vasile Popescu;Scoala Gimnaziala "Gheorghe Sincai";28
+411;Alexandru Andreescu;Scoala Gimnaziala "Gheorghe Sincai";28
+412;Dumitru Stanciu;Scoala Gimnaziala "Gheorghe Sincai";28
+413;Radu Ionescu;Scoala Gimnaziala "Gheorghe Sincai";28
+414;Cosmin Dinescu;Scoala Gimnaziala "Gheorghe Sincai";28
+415;Marian Fratila;Scoala Gimnaziala "Gheorghe Sincai";28
+416;Vasile Barbu;Scoala Gimnaziala "Gheorghe Sincai";28
+417;Robert Cristea;Scoala Gimnaziala "Gheorghe Sincai";28
+418;Andrei Negoita;Scoala Gimnaziala "Gheorghe Sincai";28
+419;Ciprian Georgescu;Scoala Gimnaziala "Gheorghe Sincai";28
+420;Petru Manole;Scoala Gimnaziala "Gheorghe Sincai";28

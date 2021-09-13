@@ -1,0 +1,413 @@
+AI materie:
+
+
+Probleme:
+1. Rezolvabile in mod determinist
+	- calcule matematice
+2. Rezolvabile in mod stocastic
+	- probleme din lumea reala
+	- cautari
+
+Probleme:
+1. de cautare / optimizare
+2. de modelare
+3. de simulare
+
+NP-complete:
+- se poate rezolva prin brute-force, corectitudinea fiecarei solutii poate sa fie determinata rapid
+- problema poate simula alte probleme asemanatoare.
+- nondeterministic (brute-force), polynomial time (timpul de verificare a corectitudinii solutiilor), complete (poate simula orice in aceeasi clasa de complexitate).
+
+Rezolvarea problemelor prin cautare: construirea progresiva a solutiei / identificarea solutiei potentiale optime.
+
+Tipologia strategiilor de cautare:
+1. dupa modul de generare a solutiei
+	- cautare constructiva (construire progresiva)
+	- cautare perturbativa (o sol. candidat e modificata pentru a se gasii alta sol. candidat)
+2. dupa modul de traversare
+	- cautare sistematica (traversare completa)
+	- cautare locala (dintr-un punct in alt punct vecin)
+3. dupa elementele de certitudine
+	- cautare determinista (solutie exacta)
+	- cautare stocastica (aproximare a solutiei)
+4. dupa stilul de explorare
+	- cautare secventiala
+	- cautare paralela
+5. dupa scop
+	- cautare uni-obiectiv
+	- cautare multi-obiectiv
+6. dupa numarul de solutii optime
+	- cautare uni-modala
+	- cautare multi-modala
+7. dupa tipul de algoritm
+	- nr. finit de pasi
+	- iterativ
+	- euristic (aproximare a solutiei)
+8. dupa mecanismul cautarii
+	- cautare traditionala
+	- cautare moderna
+9. dupa loc
+	- cautare locala
+	- cautare globala
+10. dupa tipul constrangerilor
+	- cautare liniara
+	- cautare neliniara
+11. dupa agentii implicati
+	- cautare realizata de un singur agent
+	- cautare adversiala (adversarul aduce piedici in atingerea obiectivului)
+
+Cautare exhaustiva: se incearca toate path-urile din arbore
+Greedy: se incearca un singur path
+Branch and bound: se elimina drumurile moarte (cu care stim ca nu se ajunge la solutie) + BFS sau ceva
+
+Strategii de cautare
+1. neinformate (oarbe - generale)
+	- in structuri liniare
+		- cautare liniara
+		- cautare binara
+	- in structuri ne-liniare
+		- cautare in latime (BFS)
+			- cautare de cost uniform (branch and bound)
+		- cautare in adancime (DFS)
+			- limitata (DLS)
+			- iterativa (IDS)
+		- cautare bidirectionala (BDS)
+2. informate (euristici - specifice pe problema) h(n) functie de cost euristica de la starea curenta n la starea finala
+	- strategii globale
+		- best-first search (priority queue)
+			- greedy best-first search (f(n) = h(n))
+			- A* (f(n) = g(n) + h(n)) - g(n) functie de cost de la starea initiala la starea curenta n
+	- strategii locale
+		- cautare locala simpla (se retine o singura stare)
+			- cautare tabu - retine lista solutiilor recent vizitate + HC / SA
+			- hill climbing - alege cel mai bun vecin
+			- simulated annealing - alege probabilistic cel mai bun vecin (poate sa aleaga si vecini mai prosti ca sa nu se blocheze in minime locale)
+		- cautare locala in fascicol (se retin mai multe stari)
+			- alg evolutivi
+			- Particle swarm optimisation (PSO)
+			- ant colony optimisation (ACO)
+
+Algoritmi evolutivi:
+individ - solutie potentiala
+populatie - multime de solutii potentiale
+cromozom - codarea unei solutii potentiale
+gena - parte a codarii
+fitness - calitate
+incrucisare si mutatie - operatori de cautare
+mediu - problema
+
+Reprezentarea cromozomilor
+- liniara
+	- discreta
+		- binara (0 si 1)
+		- ne-binara
+			- intreaga
+				- oarecare - imagini
+				- permutari - tsp
+			- categoriala - colorare harti (etichete)
+- arborescenta (regresie)
+
+genotip - reprezentare in cod (0, 1)
+fenotip - semnificatie, semantica, interpretarea etichetelor (red, black)
+
+AG pasi:
+se creeaza multe generatii
+best_chromosome = 0 (best_fitness)
+pentru fiecare generatie:
+	se selecteaza un ensantion de cromozomi (turnir, ruleta, ranguri)
+	incrucisare (cutting)
+	mutatie (swap, insert)
+	best_chromosome din generatia curenta se compara cu best_chromosome global si se pastreaza daca e cazul
+# intre generatii - 
+# - generational (generatii noi, nu se pastreaza nimic de la vechea generatie)
+# - elitist (se pasteaza cel mai bun din vechea generatie, in rest se schimba toti)
+# - steady-state (nu se schimba toata generatia, ci doar se inlocuieste cel mai prost chromosome daca e cazul, adica daca se gaseste unul mai bun decat cel mai prost)
+
+PSO si ACO se bazeaza pe comunitati de indivizi care tin cont de reguli interne atunci cand lucreaza - cautare cooperativa, ghidata de calitatea relativa a indivizilor
+
+PSO schema generala:
+1. crearea populatiei initiale de particule
+	- random
+	- viteze nule / aleatoare
+2. evaluarea particulelor
+3. pentru fiecare particula
+	- actualizarea memoriei
+		- cea mai buna particula dintre particulele vecine
+		- cea mai buna pozitie (fitness)
+	- modificarea vitezei
+	- modificarea pozitiei
+4. daca nu se indeplinesc conditiile de oprire, se revine la pasul 2, altfel stop
+
+ACO versiuni:
+- Ant system (AS) - toate furnicile depun feromon dupa construirea unei solutii complete (modificare globala colectiva)
+- MaxMin Ant system (MMAS) - doar cea mai buna furnica depune feromon la final (modif globala a liderului). Feromonul depus este limitat la un interval dat (min-max)
+- Ant colony system (ACS) - toate furnicile depun feromon la fiecare pas in construirea solutiei (modif locala colectiva). Doar cea mai buna furnica depune feromon la final (modificare globala a liderului)
+
+Sisteme care invata singure (SIS / ML)
+- invatare supervizata (regresie / clasificare) - stim input si output pentru antrenare (date etichetate)
+- invatare nesupervizata (clusterizare / reducerea numarului de dimensiuni) - stim input, fara output (date neetichetate)
+- invatare cu intarire - secvente de decizii / actiuni, bazat pe un sistem de recompense
+- teoria invatarii
+
+scop:
+- predictii / regresii
+- regresii simbolice (forme de functii)
+- clasificare
+- planificare
+- clusterizare (grupuri)
+
+Masuri de performanta
+- eroare de predictie (real - computed)
+- acuratete (nr de exemple corect clasificate / nr total de exemple)
+- precizia (predictii pozitive corecte / toate predictiile pozitive (TP + FP))
+- rapel (predictii pozitive corecte / toate exemplele pozitive (TP + FN))
+- scorul F1
+
+Invatare supervizata
+- metoda celor mai mici patrate (regresie) - o singura generatie, se gaseste o functie f(x) pentru datele de antrenament
+- gradient descent (regresie) - mai multe generatii, se calculeaza weight-urile pe fiecare generatie si se updateaza. Se aplica learning_rate si se tine cont de weight-urile anterioare.
+	- stocastic
+		- eroarea se calculeaza pentru fiecare exemplu de antrenament
+		- modelul se updateaza pentru fiecare exemplu de antrenament
+	- batch
+		- eroarea se calculeaza pentru fiecare exemplu de antrenament
+		- modelul se updateaza dupa ce toate exemplele de antrenament au fost evaluate (la finalul unei epoci)
+	- mini-batch
+		- setul de date se imparte in mai multe parti (mini-batch-uri)
+		- eroarea se calculeaza pentru fiecare exemplu de antrenament dintr-un mini-batch
+		- modelul se updateaza pentru fiecare exemplu de antrenament dintr-un mini-batch
+- regresie logistica (clasificare) - pe evaluare se aplica functia sigmoid (S(z) = 1 / (1 + e^-z)), mapare in (0,1)
+- ANN (regresie / clasificare)
+	- reguli de baza
+		- regula perceptronului - calitatea unui model se stabileste in functie de una dintre datele de intrare (discreta si cu prag)
+		- regula delta - calitatea unui model se stabileste in functie de toate datele de intrare (continua si fara prag)
+	- informatia se propaga in RNA inainte (forward propagation)
+	- eroarea se propaga in RNA inapoi (backpropagation)
+	- clasificare binara
+		- functia de cost - cross-entropy loss (logistic loss)
+	- clasificare multi-class
+		- functie de activare pentru output softmax - mapare (0,1)
+		- functia de cost - categorical cross-entropy loss (softmax loss)
+		- one hot encoding
+		- CE = -sum(p*log(q))
+	- clasificare multi-label
+		- functie de activare pentru output sigmoid - mapare (0,1)
+		- functia de cost - binary cross-entropy (sigmoid cross-entropy)
+		- one hot encoding
+		- CE = sum(-p*log(q) - (1-p)*log(1-q))
+- SVM (masini cu suport vectorial)
+	- date liniar separabile
+		- separabile (eroarea = 0)
+		- ne-separabile (se permit erori, C - coeficient de penalizare)
+	- date non-liniar separabile - se foloseste functia kernel, la nivelul careia datele devin liniar separabile
+	- coeficient de penalizare C
+		- C mic - convergenta lenta
+		- C mare - convergenta rapida
+	- parametrii functiei kernel
+		- nr de atribute este mult mai mare decat nr de instante - kernel liniar
+		- nr de atribute este mare, iar nr de instante este mediu - kernel Gaussian
+		- nr de atribute este mic, nr de instante este mare - se adauga noi atribute + kernel liniar
+	- one vs all
+- programare genetica (inspirata de alg evolutivi)
+	- cromozom = arbore cu noduri de tip
+		- functie - + * / sin log if
+		- terminal - atribute ale datelor problemei sau constante
+		- codeaza expresia matematica a unui program sub forma de arbore
+	- fitness - eroarea de predictie
+	- initializare cromozomi - se genereaza aleator arbori corecti (expresii matematice valide) si se stabileste o adancime maxima a arborelui
+	- incrucisare - cutting point, se interschimba doi sub-arbori
+	- mutatie - inlocuirea unei frunze cu un nou sub-arbore
+	- se face incrucisare SAU mutatie
+- kNN (k-nearest neighbours)
+	- in etapa de antrenament doar se citesc datele de intrare (atributele si clasa fiecarei instante)
+	- in etapa de testare, pentru o noua instanta (fara clasa)
+		- se cauta cei mai apropiati k vecini (distante)
+		- se preia clasa majoritara a acestor k vecini, daca niciuna nu e majoritara, se preia cea cu plurality vote cel mai mare (clasa care are cele mai multe elemente din domeniul selectat)
+- arbori de decizie
+	- arbore orientat bicolor
+	- 3 tipuri de noduri
+		- de decizie - posibilitatile decidentului
+		- ale hazardului - evenimente aleatoare in afara controlului decidentului
+		- rezultat - situatie finala (are o utilitate sau o eticheta) - frunze
+	- fiecare nod intern corespunde unui atribut
+	- fiecare ramura de sub un nod (atribut) corespunde unei valori a atribului
+	- fiecare frunza corespunde unei clase
+	- Fasonare
+		- prealabila (pre-pruning) - oprirea construirii arborelui mai devreme (se pune frunza in loc sa se creeze un intreg subarbore cu eticheta majoritara)
+		- ulterioara (post-pruning) - inlaturarea anumitor ramuri (dupa ce se creeaza arborele se elimina unii subarbori (se pune frunza))
+
+Underfitting (sub-potrivire) - prea putine date de antrenament, eroarea de clasificare este mare
+Overfitting (supra-potrivire, invatare pe de rost) - modelul se potriveste prea exact pe datele de antrenament, nefiind capabil sa generalizeze pt date noi
+
+Invatare nesupervizata (clustering, grupare / nu avem etichete de output, acestea se aleg dintre grupurile formate)
+- clustering - proces de grupare a obiectelor pe baza caracteristicilor lor
+- obiectele trebuie sa fie similare in cadrul unui grup
+- pasii procesului de grupare
+	- stabilirea datelor de intrare (optional selectarea atributelor)
+		- dupa nr de atribute - binare, discrete, continue
+		- dupa tipul valorilor - calitative, cantitative
+	- definirea unei masuri de proximitate (vecinatate, distanta, similaritate)
+	- grupare (clustering)
+	- abstractizare (medoizi, centroizi)
+	- evaluare rezultate
+- distanta euclidiana, manhattan (minima)
+- similaritate cosinus, Jaccard (maxima)
+- tehnici de clustering
+	- metode ierarhice (datele nu sunt partitionate intr-un anumit numar de grupuri dintr-un singur pas)
+		- alg aglomerativi (fuziuni succesive in grupuri)
+		- alg divizivi (separare succesiva in grupuri fine, mai precise)
+	- metode partitionale (se obtin partitii a setului de date)
+		- k-medoids - k clusteri pe baza unui obiect din cluster (medoid)
+		- k-means - k clusteri pe baza mediei obiectelor din cadrul lor (centrul lor centroid - media)
+		- alg bazati pe densitate
+	- etc
+- hard vs fuzzy - atribuirea hard indica faptul ca un obiect poate apartine unui singur grup, atribuirea fuzzy defineste grade de apartenenta la diferite grupuri pentru fiecare instanta
+
+k-means
+- selectare k instante ca fiind centroizi initiali (k-means++)
+- atribuie obiectele la cel mai apropiat centroid
+- recalculeaza centroidul fiecarui grup
+- revenire la pasul 2, oprirea realizandu-se atunci cand nu mai au loc modificari
+
+k-medoids
+- selectare k instante (medoizi)
+- se inlocuieste unul dintre medoizi cu un obiect neselectat. Se calculeaza distanta dintre toate neselectate si cel mai apropiat medoid. Suma acestor distanta = costul configuratiei curente
+- se selecteaza configuratia cu cost minim
+- data exista o noua configuratie, se repeta pasul 2
+
+evaluare clustering
+- externa - informatii anterioare despre date
+	- acuratete
+	- precizie
+	- specificitate
+	- senzitivitate (rapel)
+- interna - informatii intrinseci
+	- index Dunn
+	- coeficient Silhouette
+	- index Davies-Bouldin
+
+Sisteme bazate pe reguli
+- sistemele computationale - alcatuite din 2 module principale
+	- baza de cunostinte (inf despre domeniu)
+		- cunostinte exacte (perfecte)
+		- cunostinte imperfecte (nesigure, incerte)
+	- modulul de control (inferenta) - reguli prin care se pot obtine informatii noi
+- modalitati de reprezentare a cunostintelor
+	- logica formala (sintaxa, semantica, metoda de inferenta sintactica)
+	- reguli - euristici speciale care genereaza informatii
+		- if then
+		- interdependentele intre reguli - retea de inferenta
+	- retele semantice - grafuri orientate cu semantice intre concepte (antonimie, meronimie, sinonimie etc)
+- modulul de control
+	- cu legatura inainte (forward chaining) - pleaca de la date si vrea sa ajunga la solutie (data driven)
+		- aproape toate inf se dau la inceput
+		- exista nr mare de scopuri potentiale, dar doar o parte din ele sunt realizabile
+		- este dificila formularea unui scop sau a unor ipoteze
+	- cu legatura inapoi (backward chaining) - pleaca de la o solutie si cauta sa o suporte / contrazica (goal driven)
+		- scopul sau ipotezele se dau sau sunt usor de formulat
+		- exista multe reguli care se potrivesc cu faptele din BC, multe concluzii
+		- nu se dau datele problemei
+- tehnici de inferenta
+	- in medii certe
+		- bazate pe logica (SBL)
+		- bazate pe reguli (SBR)
+	- in medii incerte
+		- teoria probabilitatilor
+		- teoria posiblitatii
+
+Sisteme bazate pe reguli in medii certe
+- SBL
+	- alcatuit din
+		- limbaj (sintaxa + semantica) - baza de cunostinte
+		- metoda de deductie (inferenta) - modul de control
+	- reguli de inferenta
+		- modus ponens
+		- si introductiv
+		- si eliminativ
+		- negatie dubla
+		- rezolutie unitara
+		- rezolutie
+- SBR - folosesc metode asemanatoare cu expertii umani
+	- incearca sa imite un expert uman
+	- comunicare intre expert si user
+	- BC contine
+		- fapte - afirmatii corecte
+		- reguli - euristici speciale care genereaza informatii
+	- fapte
+		- in functie de persistenta
+			- fapte statice (aprox. permanente)
+			- fapte tranzitive - specifice unei instante/rulari
+		- in functie de modul de generare
+			- fapte date
+			- fapte derivate
+	- reguli
+		- deductie - cauza + regula = efect
+		- abductie - efect + regula = cauza
+		- inductie - cauza + efect = regula
+		- if then
+		- in functie de gradul de incertitudine
+			- reguli sigure
+			- reguli nesigure
+		- in functie de ceea ce exprima
+			- relatii
+			- recomandari
+			- directive
+			- euristici
+	- daca pentru un scop se pot aplica mai multe reguli, se alege doar una dintre ele
+- strategii de alegere a regulii
+	- prima regula
+	- random
+	- cea mai specifica
+	- cea mai veche
+	- cea mai buna
+
+Sisteme bazate pe reguli in medii incerte
+- surse de incertitudine
+	- imperfectiunea regulii
+	- nesiguranta evidentei (dovezii)
+	- utilizarea unui limbaj vag
+- exprimarea incertitudinii
+	- probabilitati
+	- logica fuzzy
+	- teorema lui Bayes
+	- teoria Dempster-Shafer
+- moduri de reprez a incertitudinii
+	- un numar (factor de certitudine / incredere)
+	- 2 numere (logica intervalelor)
+		- min (incredere, necesitate)
+		- max (plauzabilitate, posibilitate)
+- sisteme de tip Bayes - SBR in care faptele si regulile sunt probabilistice
+- sisteme bazate pe certitudine - Bayes dar prob sunt inlocuite cu factori de certitudine
+- sisteme fuzzy (ex. Afara este frig | raspunsul poate sa difere de la un individ la altul, cum percepe un individ e diferit de cum percepe altul)
+	- logica fuzzy (valori intre 0 si 1)
+	- fuzzificare - stabilirea variabilelor fuzzy si a multimilor fuzzy pe baza functiilor de apartenenta
+	- apoi inferenta
+	- apoi defuzzificare (transformarea rezultatului fuzzy al agregarii intr-o valoare crisp)
+	- multimile fuzzy se construiesc prin delimitari graduale (functia de apartenenta)
+		- singulara
+		- triunghiulara
+		- trapezoidala
+		- functia Z
+		- functia produs
+		- etc
+	- operatii pe sisteme fuzzy
+		- complement
+		- incluziune
+		- intersectie
+		- reuniune
+		- egalitate
+		- produs algebric
+		- suma algebrica
+	- fuzzificare
+		- se stabilesc datele
+		- pentru fiecare data se definesc functiile de apartenenta (doua sau mai multe)
+		- se asociaza una sau mai multe variabile ligvistice
+		- se transforma fiecare data de intrare intr-o variabila lingvistica
+		- ex. - data -> temperatura | var. ling. -> redusa, medie, inalta
+	- consecintele unei reguli
+		- fiecare regiune de iesire va trebui defuzzificata pentru obtinerea valorilor crisp
+		- model mamdani - variabila de iesire face parte dintr-o multime fuzzy
+			- multimi fuzzy rezultat de tip clipped (calcule usoare, se pierd informatii)
+			- multimi fuzzy rezultat de tip scaled (se pierd putine informatii, calcule complicate)
+		- model sugeno - variabila de iesire este o functie crisp care depinde de intrari
+		- model tsukamoto - variabila de iesire face parte dintr-o multime fuzzy cu o functie de apartenenta monotona.

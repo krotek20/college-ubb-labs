@@ -1,0 +1,39 @@
+fiecare clasa are:
+	un nume
+	date
+	metode
+date si metodele sunt
+	private daca au -
+	public daca au +
+	protected daca au #
+	metode in italic => virtuale
+
+sageti:
+	unidirectionale, continue, fara triunghi = "contine" (1..* = mai multe, nimic = unul)
+		de la cine e indreptata sageata acela contine, spre cine e indreptata sageata e continutul
+	bidirectionala, continua, fara triunghi => ambele se contin unul pe altul
+	sageti necontinue (punctate) = "se foloseste de"
+	sageti cu triunghi = mosteneste
+		de la cine e indreptate e cine mosteneste, spre cine e indreptate e ce mosteneste
+
+la problema 3:
+	unique_ptr, nu referinta sau valoare sau pointeri normali
+	std::make_unique<>(argumente_constructor), std::move(unique_ptr_de_copiat)
+la mostenire => destructor virtual
+
+
+Adder<TElem>& operator --(){
+	
+}
+
+java:
+
+public class Main{
+	public static void main(String[] args){
+		System.out.println("Hello world!");
+	}
+}
+
+python:
+
+print("Hello world!");

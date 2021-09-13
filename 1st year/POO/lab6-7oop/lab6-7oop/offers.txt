@@ -1,0 +1,3 @@
+nume nume nume 15
+z ceva ceva 54
+a a a 5

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            cursor: pointer;
+        }
+
+        thead {
+           float: left
+        }
+
+        tbody {
+           display: flex;
+           flex-wrap: wrap;
+        }
+
+        thead th {
+           display: block;
+           border: 1px solid black;
+        }
+
+        tbody tr {
+           display: flex;
+           flex-direction: column;
+        }
+
+        tbody td {
+           border: 1px solid black;
+        }
+
+        #table2 {
+            margin: 50px 0 0 0;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="content">
+        <table id="table1">
+            <thead>
+                <tr>
+                    <th>Fructe</th>
+                    <th>Pret</th>
+                    <th>Cantitate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mere</td>
+                    <td>3</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Pere</td>
+                    <td>7</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Struguri</td>
+                    <td>6</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="content">
+        <table id="table2">
+            <thead>
+                <tr>
+                    <th>Legume</th>
+                    <th>Pret</th>
+                    <th>Cantitate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Morcovi</td>
+                    <td>6</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Cartofi</td>
+                    <td>3</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Ardei</td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="4.min.js"></script>
+
+</html>

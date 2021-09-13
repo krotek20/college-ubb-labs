@@ -1,0 +1,5 @@
+3;ceva;tip;1.000000
+2;ceva;tip;2.000000
+1;ceva;tip;3.000000
+5;ceva;tip;4.000000
+4;ceva;tip;5.000000

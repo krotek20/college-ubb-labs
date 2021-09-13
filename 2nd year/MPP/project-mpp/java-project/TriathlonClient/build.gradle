@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+group 'com.radu.mpp'
+version '1.0'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName="triathlon.client.MainClient"
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project (':TriathlonModel')
+    compile project (':TriathlonServices')
+    compile 'org.springframework:spring-context:5.0.4.RELEASE'
+}
+
+javafx {
+    modules = [ 'javafx.controls',  'javafx.fxml' ]
+}

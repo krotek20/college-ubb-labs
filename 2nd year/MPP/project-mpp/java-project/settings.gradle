@@ -1,0 +1,9 @@
+rootProject.name = 'project-java'
+include 'TriathlonModel'
+include 'TriathlonPersistence'
+include 'TriathlonServer'
+include 'TriathlonServices'
+include 'TriathlonClient'
+include 'CommonCode'
+include 'RestServices'
+

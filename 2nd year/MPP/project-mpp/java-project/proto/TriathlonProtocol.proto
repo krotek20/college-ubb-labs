@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package proto;
+
+option java_package = "triathlon.network.protobuffprotocol";
+option java_outer_classname = "TriathlonProto";
+option objc_class_prefix = "TP";
+
+message Athlete {
+  int64 id = 1;
+  string name = 2;
+}
+
+message Game {
+  int64 id = 1;
+  string name = 2;
+}
+
+message Referee {
+  int64 id = 1;
+  Game game = 2;
+  string name = 3;
+  string username = 4;
+  string password = 5;
+}
+
+message Result {
+  int64 id = 1;
+  Game game = 2;
+  Athlete athlete = 3;
+  float value = 4;
+}
+
+message AthleteGameResult {
+  Result result = 1;
+  Athlete athlete = 2;
+}
+
+message SetResultParams {
+  Athlete athlete = 1;
+  Game game = 2;
+  float value = 3;
+}
+
+message TriathlonRequest {
+  enum Type {Unkown = 0; AUTHENTICATION = 1; LOGOUT = 2; GET_ALL_ATHLETES = 3; GET_RESULTS_GAME = 4; GET_GAME_ID = 5;
+    GET_ATHLETES_TOTAL_POINTS = 6; SET_POINTS = 7;}
+  Type type = 1;
+  oneof payload {
+    Referee referee = 2;
+    int64 gameId = 3;
+    SetResultParams params = 4;
+  }
+}
+
+message TriathlonResponse {
+  enum Type {Unknown = 0; OK = 1; ERROR = 2; UPDATE_POINTS = 3; SEND_ALL_ATHLETES = 4; SEND_RESULTS_GAME = 5;
+    SEND_GAME_ID = 6; SEND_ATHLETES_TOTAL_POINTS = 7;}
+  Type type = 1;
+  string error = 2;
+  repeated Athlete athletes = 3;
+  map<string, float> athletesTotalPoints = 4;
+  Game game = 5;
+  Referee referee = 6;
+  repeated Result resultsForGame = 7;
+  Result result = 8;
+}

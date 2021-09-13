@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:utils="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <utils:properties id="jdbcProps" location="classpath:server.properties"/>
+    <bean id="athleteRepo" class="triathlon.persistence.ormRepository.ORMAthleteRepository">
+
+    </bean>
+
+<!--    <bean id="athleteRepo" class="triathlon.persistence.dbRepository.DBAthleteRepository">-->
+<!--        <constructor-arg index="0" ref="jdbcProps"/>-->
+<!--        <constructor-arg index="1">-->
+<!--            <bean class="triathlon.persistence.validators.AthleteValidator"/>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id="gameRepo" class="triathlon.persistence.ormRepository.ORMGameRepository">
+
+    </bean>
+
+<!--    <bean id="gameRepo" class="triathlon.persistence.dbRepository.DBGameRepository">-->
+<!--        <constructor-arg index="0" ref="jdbcProps"/>-->
+<!--        <constructor-arg index="1">-->
+<!--            <bean class="triathlon.persistence.validators.GameValidator"/>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id="refereeRepo" class="triathlon.persistence.ormRepository.ORMRefereeRepository">
+
+    </bean>
+
+<!--    <bean id="refereeRepo" class="triathlon.persistence.dbRepository.DBRefereeRepository">-->
+<!--        <constructor-arg index="0" ref="jdbcProps"/>-->
+<!--        <constructor-arg index="1">-->
+<!--            <bean class="triathlon.persistence.validators.RefereeValidator"/>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id="resultRepo" class="triathlon.persistence.ormRepository.ORMResultRepository">
+
+    </bean>
+
+<!--    <bean id="resultRepo" class="triathlon.persistence.dbRepository.DBResultRepository">-->
+<!--        <constructor-arg index="0" ref="jdbcProps"/>-->
+<!--        <constructor-arg index="1">-->
+<!--            <bean class="triathlon.persistence.validators.ResultValidator"/>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id="triathlonService" class="triathlon.server.SuperService">
+        <constructor-arg ref="gameRepo"/>
+        <constructor-arg ref="resultRepo"/>
+        <constructor-arg ref="refereeRepo"/>
+        <constructor-arg ref="athleteRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="Triathlon"/>
+        <property name="service" ref="triathlonService"/>
+        <property name="serviceInterface" value="triathlon.services.ITriathlonServices"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+</beans>
